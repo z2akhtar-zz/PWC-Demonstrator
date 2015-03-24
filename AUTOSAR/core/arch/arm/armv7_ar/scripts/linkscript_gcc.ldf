@@ -1,0 +1,104 @@
+/* 
+ * Copyright (C) ArcCore AB <contact@arccore.com>
+ *
+ * ST startup variables: 
+ * _sidata - Start of .data in flash 
+ * _sdata  - start address of .data in RAM
+ * _edata  - end address of .data  in RAM
+ * _sbss   - start address of .bss
+ * _ebss   - end address of .bss
+ * _etext  - ?
+ */
+
+// OUTPUT_FORMAT("elf32-bigarm")
+//OUTPUT_ARCH(arm)
+ENTRY(Reset_Handler)
+
+#define intvecs flash
+
+
+MEMORY
+{
+#include "memory.ldf"
+}
+
+SECTIONS
+{
+    .int_vecs :
+    {
+        KEEP(*(.int_vecs))
+    } > intvecs
+
+    .text :
+	{
+    	*(.text .text.* );
+
+    	/* ST/ARM special variable to initialize .data */
+    	_etext = .;
+	} > flash
+
+	/* Read-only data section. */
+	.rodata :	{ 
+		*(.rodata .rodata.* .gnu.linkonce.r.*)
+		_sidata = ALIGN(.,4);
+	} > flash
+	
+
+	.data :	 {
+		_sdata = ALIGN(.,4); 
+		*(.data .data.* .gnu.linkonce.d.* .gnu.linkonce.r.* .eh_frame)
+		_edata = ALIGN(.,4);		
+	} > ram AT > flash
+
+	.bss : {
+		_sbss = ., 
+		*(.bss .bss.* COMMON .gnu.linkonce.b.*);
+		_ebss = .; 
+	} 	> ram
+	
+	.init_stack ALIGN(16) (NOLOAD) : 
+	{	
+		_sstack = .;
+		. = . + 8000; 	
+		_estack	= .; 
+		. = . + 1;
+		. = ALIGN(4);
+	} > ram
+	
+	PROVIDE(_heap_start = .);
+		
+}
+
+_sidata = LOADADDR(.data);
+
+__EXCEPT_START__	= 0x0;
+__EXCEPT_END__		= 0x0;
+
+_heap_end = ORIGIN(ram) + LENGTH(ram);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

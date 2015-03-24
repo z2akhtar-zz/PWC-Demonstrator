@@ -1,0 +1,29 @@
+package PWC.SensorsActuators.EndStopDtc
+
+import PWC.Types.*
+import PWC.Services.IoHwAb.*
+import ArcCore.Services.IoHwAb.*
+import PWC.SensorsActuators.EndStopDtc.*
+
+component application EndStopDtcType
+{
+	ports {
+		client isEndStop requires DigitalServiceRead
+		sender endStop provides BasicIndicator
+	}
+}
+
+internalBehavior EndStopDtcBehavior for EndStopDtcType {
+	
+	runnable EndStopDtcRunnable [0.0] {
+		symbol "EndStopDtcRunnable"
+		dataWriteAccess endStop.isPresent
+		serverCallPoint synchronous isEndStop.Read
+		timingEvent 0.05 as StepEndStop
+	}
+}
+
+implementation EndStopDtcImpl for EndStopDtcType.EndStopDtcBehavior {
+	language c
+	codeDescriptor "src"
+}

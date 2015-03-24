@@ -1,0 +1,51 @@
+- arch/ppc/mpc55xx/drivers/MPC5606B.h
+- arch/ppc/mpc55xx/drivers/MPC5645S.h
+- arch/ppc/mpc55xx/drivers/mpc5606s.h
+- arch/ppc/mpc55xx/drivers/mpc5744P.h
+- arch/ppc/mpc55xx/drivers/mpc5567.h
+- arch/ppc/mpc55xx/drivers/mpc5516.h
+- arch/ppc/mpc55xx/drivers/mpc5644A.h
+- arch/ppc/mpc55xx/drivers/MPC5643L.h
+- arch/ppc/mpc55xx/drivers/MPC5607B.h
+- arch/ppc/mpc55xx/drivers/mpc5744P.h
+- arch/ppc/mpc55xx/drivers/mpc5554.h
+- arch/ppc/mpc55xx/drivers/560xP_HEADER_v1_10_SBCHM.h
+- arch/ppc/mpc55xx/drivers/MPC5604B_0M27V_0102
+- arch/ppc/mpc55xx/drivers/flash_ll_h7f_c90.h
+- arch/ppc/mpc55xx/drivers/flash_ll_h7f_c90.c
+- arch/ppc/mpc55xx/drivers/mpc5668.h
+- arch/ppc/mpc55xx/drivers/mpc563m.h
+- arch/ppc/mpc55xx/drivers/SPC56XL70.h
+- arch/ppc/mpc55xx/drivers/MPC5777M.h
+- arch/ppc/mpc55xx/drivers/typedefs.h
+- arch/ppc/mpc55xx/delivery/mpc5500_h7f
+- arch/ppc/mpc55xx/drivers/MPC5634M_MLQB80.h
+- arch/ppc/mpc55xx/drivers/MPC5644A.h
+- arch/ppc/mpc55xx/drivers/mpc5500_spr.h
+- arch/ppc/mpc55xx/drivers/mpc563m_vars.h
+- arch/ppc/mpc55xx/drivers/mpc5554_vars.h
+
+- arch/arm/arm_cm3/drivers/STM32F10x_StdPeriph_Driver 
+- arch/arm/arm_cm3/drivers/STM32_ETH_Driver
+- arch/arm/arm_cm3/kernel/stm32f10x.h
+- arch/arm/arm_cm3/kernel/core_cm3.h
+- arch/arm/arm_cm3/kernel/core_cm3.c
+
+- arch/arm/arm_cr4/drivers/TMS570LS12x_Pwm_Driver
+- arch/arm/arm_cr4/drivers/F021
+- arch/arm/arm_cr4/drivers/Adc_TMS570.h
+
+- arch/renesas/rh850_x/kernel/dr7f701503_irq.h
+- arch/renesas/rh850_x/kernel/dr7f701503.dvf.h
+
+- communication/lwip-1.4.1
+- communication/lwip-1.5.0-beta
+
+- system/Crc/Crc_16.c
+- clib/strtok_r.c
+- include/sys/queue.h
+
+- scripts/pclint/lnt/co-gcc.h
+- scripts/pclint/lnt/lint_cmac.h
+
+~ RULE_ArcCore_1_provide_file_dual_license_header

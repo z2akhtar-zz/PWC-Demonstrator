@@ -1,0 +1,51 @@
+
+/*
+ * Generator version: 1.0.0
+ * AUTOSAR version:   4.0.3
+ */
+
+package PWC.Services.IoHwAb
+
+import ArcCore.Services.IoHwAb.*
+import ArcCore.Platform.ImplementationDataTypes.*
+
+
+/* === Component =========================================================== */
+
+component ecuAbstraction IoHwAb {
+    ports {
+		server Digital_DigitalSignal_LED1 provides DigitalServiceWrite
+		server Digital_DigitalSignal_LED2 provides DigitalServiceWrite
+		server Digital_DigitalSignal_EndStop provides DigitalServiceRead
+		server Digital_DigitalSignal_Obstacle provides DigitalServiceRead
+    }
+}
+
+/* === Internals =========================================================== */
+
+internalBehavior IoHwAbBehavior for IoHwAb {
+	
+    runnable concurrent DigitalWrite [0.0] {
+    	symbol "IoHwAb_Digital_Write"
+        operationInvokedEvent Digital_DigitalSignal_LED1.Write
+        operationInvokedEvent Digital_DigitalSignal_LED2.Write
+    }
+    
+    runnable concurrent DigitalRead [0.0] {
+    	symbol "IoHwAb_Digital_Read"
+        operationInvokedEvent Digital_DigitalSignal_Obstacle.Read
+        operationInvokedEvent Digital_DigitalSignal_EndStop.Read
+    }
+    
+    portAPIOption Digital_DigitalSignal_LED1{IoHwAb_SignalType_ 0}
+    portAPIOption Digital_DigitalSignal_LED2{IoHwAb_SignalType_ 3}
+
+    portAPIOption Digital_DigitalSignal_Obstacle{IoHwAb_SignalType_ 2}
+    portAPIOption Digital_DigitalSignal_EndStop{IoHwAb_SignalType_ 1}
+}
+
+implementation IoHwAbImpl for IoHwAb.IoHwAbBehavior {
+    language c
+    codeDescriptor "src"
+	vendorId 60
+}

@@ -1,0 +1,53 @@
+# 5.0.0
+# com.arccore.bsw.stylesheet
+
+########################################################
+# Hidden parameters in PwmGeneral
+########################################################
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmDutycycleUpdatedEndperiod
+  mcals: [STM32F103, STM32F107, MPC560x, MPC551x, MPC5567, MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, zynq ]
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmIndex
+  
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmPeriodUpdatedEndperiod
+  mcals: [STM32F103, STM32F107, MPC560x, MPC551x, MPC5567, MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, zynq ]
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmPowerState
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmPowerStateAsynchTransitionMode
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmLowPowerStatesSupport
+
+- !!com.arccore.common.yaml.data.styles.DisabledContainer
+  name: PwmPowerStateConfig
+  
+- !!com.arccore.common.yaml.data.styles.DisplayName
+  name: PwmDevErorDetect
+  display: PwmDevErorDetect (Deprecated)
+
+########################################################
+# Hidden parameters in PwmChannel
+########################################################
+  
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmIdleState
+  mcals: [ STM32F103, STM32F107]
+  
+########################################################
+# Hidden parameters in PwmConfigurationOfOptApiServices
+########################################################
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: PwmGetOutputState
+  mcals: [ STM32F103, STM32F107, zynq ]
+  
+#######################################################  
+#Parameters excluded from generic validation
+#######################################################    
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: PwmDevErorDetect

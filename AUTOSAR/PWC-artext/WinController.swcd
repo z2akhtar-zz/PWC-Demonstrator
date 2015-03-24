@@ -1,0 +1,31 @@
+package PWC.Components.WinController
+
+import PWC.Types.*
+import PWC.Components.WinController.*
+
+component application WinControllerType {
+	ports {
+		receiver req requires BasicRequest
+		receiver obstacle requires BasicIndicator
+		receiver endStop requires BasicIndicator
+		sender cmd provides BasicCommand
+	}
+}
+
+internalBehavior WinControllerBehavior for WinControllerType {
+	runnable WinControllerStepRunnable [0.0] {
+		symbol "WinControllerRunnable"
+		dataWriteAccess cmd.command
+		
+		dataReadAccess req.request
+		dataReadAccess obstacle.isPresent
+		dataReadAccess endStop.isPresent
+
+		timingEvent 0.05 as StepController
+	}
+}
+
+implementation WinControllerImpl for WinControllerType.WinControllerBehavior {
+	language c
+	codeDescriptor "src"
+}

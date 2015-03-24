@@ -1,0 +1,165 @@
+LOCAL &exe_dir &cpu &proj_path
+//ENTRY &cpu
+
+//do ~~/t32.cmm
+winclear
+&proj_path=os.pwd()
+do t32.cmm
+
+print "Current project path:" "&proj_path"
+
+do config load
+//do config debug
+
+IF ("&cfg_cpu_g"=="")||(CPUFAMILY()!="&cfg_cpu_family_g")
+(
+  do config dialog_project
+)
+
+IF "&cfg_project_path_g"==""
+(
+  &cfg_project_path_g="&proj_path"
+  do config dialog_project
+)
+
+//do config debug
+
+&cpu="&cfg_cpu_g"
+
+//winpos 0% 70% 50% 30%
+//area
+
+sys.down
+
+;reset
+//GLOBAL &cfg_project_path_g
+//GLOBAL &cfg_base_load_file_g
+
+&exe_dir=os.ppd()
+cd &exe_dir
+
+//do config load
+//do config dialog
+
+sys.cpu &cpu
+
+IF SIMULATOR()
+(
+	// Set MAX trace.
+  trace.size 16777215.
+
+  IF CPUFAMILY()=="POWERPC"
+  (
+		// PowerPC specifics
+    //   DEC - Decreased every X cycle
+    //   TB  - Increased every cycle
+    //   Instrcution timing - Controlled by vco.frequency
+    // 
+    //   When running "vco.frequency 10Mhz" it seems that the
+    //   decrementer is decreases every 8th cycle (should be same
+    //   as TB)...So we need to set down the decrementer value by 8
+  
+    do sim_mpc55xx
+    
+    IF CPU()=="MPC5606S"||CPU()=="spc56el70"
+      sys.option DISMODE VLE
+
+    IF CPU()=="MPC5516"
+    (
+		  // The rate in which one instruction is executed. This 
+      // is probably on the low side (when running at 80Mhz)
+      vco.frequency 10.0Mhz     
+    )
+
+  )
+)
+ELSE
+(
+    sys.bdmclock 10000000.
+)
+
+// Trace setup
+IF SIMULATOR()
+(
+	 // Set MAX trace.
+   trace.method ANALYZER 
+   trace.size 16777215.
+   trace.init
+) 
+ELSE
+(
+   trace.method SNOOPER 
+   snooper.SEL %LONG Os_Sys
+   snooper.init
+) 
+  
+// Setup flash
+SYStem.Up
+do flash init
+
+
+IF !SIMULATOR()
+(
+  break.select program onchip
+)
+
+
+// Setup how to view variables and code
+setup.var %SYMBOL.on %HEX.on %decimal.on %index.on %string.on
+setup.tabsize 2.
+
+menu.rp arccore.men
+menu.rp orti.men
+
+
+winpos 0% 70% 50% 30%
+area
+
+area.select
+print "## Welcome to ArcCore simulator environment for T32   ##"
+print ""
+
+enddo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

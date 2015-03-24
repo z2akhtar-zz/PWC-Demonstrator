@@ -1,0 +1,30 @@
+package PWC
+
+import PWC.Services.IoHwAb.IoHwAbImpl
+import PWC.PWCDriver.ioHwAb
+import PWC.SensorsActuators.Switch.SwitchImpl
+import PWC.PWCDriver.Switch
+import PWC.SensorsActuators.MotorDriver.MotorDriverImpl
+import PWC.PWCDriver.MotorDriver
+import PWC.Components.WinController.WinControllerImpl
+import PWC.PWCDriver.WinController
+import PWC.Components.WinArbitrator.WinArbitratorImpl
+import PWC.PWCDriver.WinArbitrator
+import PWC.SensorsActuators.ObstacleDtc.ObstacleDtcImpl
+import PWC.PWCDriver.ObstacleDtc
+import PWC.SensorsActuators.EndStopDtc.EndStopDtcImpl
+import PWC.PWCDriver.EndStopDtc
+
+system PWCSystem {
+	rootComposition PWCDriver
+	
+	mapping as ImplementationMappings {
+		implMap IoHwAbImpl to ioHwAb as IoHWAbMapping
+		implMap SwitchImpl to Switch as SwitchMapping
+		implMap MotorDriverImpl to MotorDriver as MotorMapping
+		implMap ObstacleDtcImpl to ObstacleDtc as ObstacleMapping
+		implMap EndStopDtcImpl to EndStopDtc as EndStopMapping
+		implMap WinControllerImpl to WinController as WinControllerMapping
+		implMap WinArbitratorImpl to WinArbitrator as WinArbitratorMapping
+	}
+}

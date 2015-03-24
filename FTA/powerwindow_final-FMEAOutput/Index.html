@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="FTOutput/css/menus.css" />
+<link rel="icon" href="http://www.hip-hops.eu/favicon.ico" type="image/x-icon" /> 
+<link rel="shortcut icon" href="http://www.hip-hops.eu/favicon.ico" type="image/x-icon" />
+<style type="text/css" media="screen">
+	@import "FTOutput/css/basic.css";
+</style>
+<style type="text/css" media="screen">
+	@import "FTOutput/css/tabs.css";
+</style>
+<script type="text/javascript" language="JavaScript" src="FTOutput/javascript/xmlTransform.js"></script>
+<script type="text/javascript" language="JavaScript" src="FTOutput/javascript/popup.js"></script>
+<script type="text/javascript" language="JavaScript" src="FTOutput/javascript/ftiens4.js"></script>
+<script type="text/javascript" language="JavaScript" src="FTOutput/javascript/ua.js"></script>
+</head>
+<body class="tableHeader" onLoad="
+menuTransform('FaultTrees.xml', 'Fault Trees Overview');
+overviewTransform('FaultTrees.xml', 'descending');
+changeTitle('HiPHOPS Analysis Results');
+">
+<table id="BodyTable" cellspacing="0">
+<tr><td><div id="MenuHeader">
+</div></td></tr>
+<tr>
+<td>
+<div id="OverviewSpace">
+</div>
+<div id="ContentSpace">
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

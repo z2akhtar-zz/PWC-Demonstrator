@@ -1,0 +1,208 @@
+
+/*
+ * Generator version: 1.0.0
+ * AUTOSAR version:   4.0.3
+ */
+
+VERSION 
+{ 
+	KOIL = "2.2"; 
+	OSSEMANTICS = "ORTI", "2.2"; 
+ };
+ 
+ IMPLEMENTATION ArcCore_ORTI {
+ 	OS {
+ 		ENUM [
+ 			"NO_TASK" = 0x0, 
+ 			"OsIdle" = "&(Os_TaskVarList[0])",
+            "CriticalTask" = "&(Os_TaskVarList[1])",              
+            "OsTask_Main" = "&(Os_TaskVarList[2])",              
+            "StepTask" = "&(Os_TaskVarList[3])"              
+
+			] RUNNINGTASK, "Running Task Identification";
+			
+      	ENUM  [
+      		"NO_ISR2" = 0x0,
+      		"ISR_0" = "&(Os_IsrVarList[0])"
+      	] RUNNINGISR2, "ISR Identification";
+ 
+ 		ENUM "unsigned char" [
+ 		] RUNNINGTASKPRIORITY, "Priority of running task";
+ 
+ 	}; /* OS */
+ 	
+ 	TASK {
+		ENUM "unsigned short" [
+		] PRIORITY, "Actual Prio";
+
+		ENUM "void*" [
+     	] STACK, "Task Stack";
+     	
+     	CTYPE "unsigned char" EvWait, "Event Wait";
+    	CTYPE "unsigned char" EvSet, "Event Set";
+    	
+    	STRING TaskType, "Task Type";
+    	CTYPE "unsigned char" MaxActivations, "Max. Activations";
+    	CTYPE "unsigned char" Activations, "Activations";
+     	
+     	ENUM "unsigned char" [
+        	"ST_READY"=1,
+        	"ST_WAITING"=2,
+        	"ST_SUSPENDED"=4,
+        	"ST_RUNNING"=8,
+        	"ST_NOT_STARTED"=16,
+          	"ST_SLEEPING"=32,
+          	"ST_WAITING_SEM"=64          	
+      	] STATE, "State";
+	};  /* TASK */
+ 	
+ 	
+ 	STACK {
+		CTYPE "unsigned short" SIZE, "Stack Size (Byte)";
+		CTYPE "unsigned short*" BASEADDRESS, "Stack Start Address";
+		STRING STACKDIRECTION, "Stack Direction";
+	}, "Stacks";   /* STACK */ 	
+ 
+ 	EVENT {
+		STRING EvMask, "Event Mask";
+	}, "Events";   /* Events */
+ 
+ 
+    ALARM {
+      ENUM "unsigned char" [
+         "STOPPED" = 0,
+         "RUNNING" = 1
+      ] STATE, "Alarm State";
+      
+      CTYPE "unsigned long" CYCLETIME, "Cycle Time (Ticks)";
+      CTYPE "unsigned long" ALARMTIME, "Alarm Time (Ticks)";
+      STRING ACTION, "Action";
+      STRING COUNTER, "Counter";
+   }, "Alarms";   /* Alarms */
+   
+	COUNTER {
+      	CTYPE "unsigned long" VALUE, "Current value";	
+   	}, "Counters";  /* Counters */
+ 
+ 	RESOURCE {
+      ENUM "unsigned char" [
+         "LOCKED"=1,
+         "UNLOCKED"=0
+      ] STATE, "Resource state";
+      
+      ENUM "unsigned short" [
+         "-" = 0xFFFF
+      ] OWNER, "Resource owner";
+      
+      ENUM "unsigned short" [
+         "-" = 0xFFFF
+      ] PRIORITY, "Ceil. priority";
+
+   }, "Resources";   /* Resources */
+ 
+ }; /* IMPLEMENTATION */
+ 
+OS ArcCore {
+	RUNNINGTASK = "Os_Sys.currTaskPtr";
+	RUNNINGISR2 = "Os_Sys.currIsrPtr";
+};
+ 
+TASK OsIdle {
+	PRIORITY = "Os_TaskVarList[0].activePriority";
+	STATE = "Os_TaskVarList[0].state";
+	STACK = "stack_OsIdle";
+}; 
+
+STACK OsIdle {
+	SIZE = "512";
+	BASEADDRESS = "stack_OsIdle[1]";
+	STACKDIRECTION = "DOWN";
+};
+ 
+TASK CriticalTask {
+	PRIORITY = "Os_TaskVarList[1].activePriority";
+	STATE = "Os_TaskVarList[1].state";
+
+	TaskType = "EXTENDED";
+	EvWait = "Os_TaskVarList[1].ev_wait";
+	EvSet = "Os_TaskVarList[1].ev_set";
+    STACK = "stack_CriticalTask";
+};
+
+STACK CriticalTask {
+	SIZE = "2048";
+	BASEADDRESS = "stack_CriticalTask[1]";
+	STACKDIRECTION = "DOWN";
+};
+TASK OsTask_Main {
+	PRIORITY = "Os_TaskVarList[2].activePriority";
+	STATE = "Os_TaskVarList[2].state";
+
+	TaskType = "EXTENDED";
+	EvWait = "Os_TaskVarList[2].ev_wait";
+	EvSet = "Os_TaskVarList[2].ev_set";
+    STACK = "stack_OsTask_Main";
+};
+
+STACK OsTask_Main {
+	SIZE = "2048";
+	BASEADDRESS = "stack_OsTask_Main[1]";
+	STACKDIRECTION = "DOWN";
+};
+TASK StepTask {
+	PRIORITY = "Os_TaskVarList[3].activePriority";
+	STATE = "Os_TaskVarList[3].state";
+
+	TaskType = "EXTENDED";
+	EvWait = "Os_TaskVarList[3].ev_wait";
+	EvSet = "Os_TaskVarList[3].ev_set";
+    STACK = "stack_StepTask";
+};
+
+STACK StepTask {
+	SIZE = "2048";
+	BASEADDRESS = "stack_StepTask[1]";
+	STACKDIRECTION = "DOWN";
+};
+
+ 
+// Skip Events
+
+COUNTER OsCounter {
+	VALUE = "counter_list[0].val";
+}; 
+
+ 
+ALARM Alarm_Main {
+    STATE = "(alarm_list[0].active) ? 1 : 0";
+	ALARMTIME = "alarm_list[0].alarmtime";
+    CYCLETIME = "alarm_list[0].cycletime";
+	ACTION = "SetEvent OsTask_Main";
+    COUNTER = "OsCounter";
+};
+ALARM StepAlarm {
+    STATE = "(alarm_list[1].active) ? 1 : 0";
+	ALARMTIME = "alarm_list[1].alarmtime";
+    CYCLETIME = "alarm_list[1].cycletime";
+	ACTION = "SetEvent StepTask";
+    COUNTER = "OsCounter";
+};
+ALARM CriticalAlarm {
+    STATE = "(alarm_list[2].active) ? 1 : 0";
+	ALARMTIME = "alarm_list[2].alarmtime";
+    CYCLETIME = "alarm_list[2].cycletime";
+	ACTION = "SetEvent CriticalTask";
+    COUNTER = "OsCounter";
+};
+ 
+
+
+
+RESOURCE RES_SCHEDULER {
+   STATE = "(Os_Sys.resScheduler.owner != 0xffff) ? 1 : 0";
+   OWNER = "Os_Sys.resScheduler.owner";
+   PRIORITY = "(Os_Sys.resScheduler.ceiling_priority)";
+};
+
+
+

@@ -1,0 +1,29 @@
+package PWC.SensorsActuators.ObstacleDtc
+
+import PWC.Types.*
+import PWC.Services.IoHwAb.*
+import ArcCore.Services.IoHwAb.*
+import PWC.SensorsActuators.ObstacleDtc.*
+
+component application ObstacleDtcType
+{
+	ports {
+		client isObstacle requires DigitalServiceRead
+		sender obstacle provides BasicIndicator
+	}
+}
+
+internalBehavior ObstacleDtcBehavior for ObstacleDtcType {
+	
+	runnable ObstacleDtcRunnable [0.0] {
+		symbol "ObstacleDtcRunnable"
+		dataWriteAccess obstacle.isPresent
+		serverCallPoint synchronous isObstacle.Read
+		timingEvent 0.05 as StepObstacle
+	}
+}
+
+implementation ObstacleDtcImpl for ObstacleDtcType.ObstacleDtcBehavior {
+	language c
+	codeDescriptor "src"
+}

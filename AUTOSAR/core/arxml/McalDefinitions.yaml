@@ -1,0 +1,54 @@
+# 1.0
+# com.arccore.bsw.mcal
+ 
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC560x
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC551x
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5567
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: STM32F103
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: STM32F107
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5777M
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5744P
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5643L
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5644A
+  
+- !!com.arccore.common.yaml.data.Mcal
+  name: SPC56XL70
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5645S
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5634M
+  
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5606B
+  
+- !!com.arccore.common.yaml.data.Mcal
+  name: MPC5607B
+
+- !!com.arccore.common.yaml.data.Mcal
+  name: zynq
+  
+- !!com.arccore.common.yaml.data.Mcal
+  name: RH850F1H
+    
+- !!com.arccore.common.yaml.data.Mcal
+  name: TMS570
+

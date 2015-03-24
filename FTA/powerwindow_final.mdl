@@ -1,0 +1,3650 @@
+Model {
+  Name			  "powerwindow_final"
+  Version		  8.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.95"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  Description		  "<HiP-HOPS_Model_Parameters><ToolVersion><Name>Matlab</Name><Number>7.14.0.739 </Number></ToolVersion"
+  "><RiskTime>100000</RiskTime><OptimisationParams><MaxGenerations>100</MaxGenerations></OptimisationParams><Hazards><H"
+  "azard><Name>Unintended Move of Window</Name><Description></Description><SafetyRequirement>0</SafetyRequirement><Caus"
+  "es><Cause><Probability></Probability><FailureLogic>InvalidValue-power_window_control_system.control.move_up + Invali"
+  "dValue-power_window_control_system.control.move_down</FailureLogic></Cause></Causes></Hazard><Hazard><Name>Pinch Det"
+  "ection Malfunction</Name><Description>If the system fails to detect an obstacle in the window path (i.e. a human ape"
+  "ngage) it will can cause physical harm to the user.</Description><SafetyRequirement>0</SafetyRequirement><Causes><Ca"
+  "use><Probability></Probability><FailureLogic>Omission-power_window_control_system.detect_obstacle_endstop.detect_obs"
+  "tacle.obstacle + Comission-power_window_control_system.detect_obstacle_endstop.detect_obstacle.obstacle</FailureLogi"
+  "c></Cause></Causes></Hazard><Hazard><Name>Window Did Not Stop on Fully Open or Close</Name><Description>The motor sh"
+  "ould stop when the window is fully open or fully closed. This could damage the motor.</Description><SafetyRequiremen"
+  "t>0</SafetyRequirement><Causes><Cause><Probability></Probability><FailureLogic>Comission-power_window_control_system"
+  ".detect_obstacle_endstop.detect_endstop.endstop</FailureLogic></Cause></Causes></Hazard><Hazard><Name>Window Does No"
+  "t Move on Request</Name><Description></Description><SafetyRequirement>0</SafetyRequirement><Causes><Cause><Probabili"
+  "ty></Probability><FailureLogic>Omission-window_system.plant.q</FailureLogic></Cause></Causes></Hazard></Hazards><Adv"
+  "ancedParameters></AdvancedParameters></HiP-HOPS_Model_Parameters>"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1382.0, 744.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1332.0, 599.0]
+	ZoomFactor		[2.3079646017699114]
+	Offset			[73.9340490797546, 17.731978527607367]
+      }
+    }
+  }
+  Created		  "Mon Dec 22 07:39:50 2014"
+  Creator		  "Jordan"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "z2akhtar"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 18 10:57:21 2015"
+  RTWModifiedTimeStamp	  343479116
+  ModelVersionFormat	  "1.%<AutoIncrement:95>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "powerwindow_final"
+    signals_		    []
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "powerwindow_final"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  CovSFcnEnable		  off
+  CovBoundaryAbsTol	  0.000010
+  CovBoundaryRelTol	  0.010000
+  CovUseTimeInterval	  off
+  CovStartTime		  0
+  CovStopTime		  0
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.14.3"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.14.3"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.14.3"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseDivisionForNetSlopeComputation "Off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.14.3"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsWarning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  IntegerSaturationMsg	  "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.14.3"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.14.3"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.14.3"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"PortableWordSizes"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"GenerateAllocFcn"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 360, 135, 1240, 765 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    18
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      CombinatorialLogic
+      TruthTable	      "[0 0;0 1;0 1;1 0;0 1;1 0;1 0;1 1]"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+  }
+  System {
+    Name		    "powerwindow_final"
+    Location		    [-8, -8, 1374, 736]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "231"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "188"
+    Block {
+      BlockType		      SubSystem
+      Name		      "driver_switch"
+      SID		      "18"
+      Ports		      [0, 3]
+      Position		      [80, 45, 170, 105]
+      ZOrder		      -1
+      List {
+	ListType		RTWdata
+	HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false</Inc"
+	"ludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</ExcludeFromO"
+	"ptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCurrentModel</S"
+	"ubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent><Name>WireBroken"
+	"</Name><Description>There is a loose wire connection or the wire has been damaged and no long sends commands</Descrip"
+	"tion><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unavailab"
+	"ilityFormula></BasicEvent><BasicEvent><Name>ContactsBroken</Name><Description>The contacts have been no damaged and n"
+	"o long open and close the circuit as expected.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</Failu"
+	"reRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>InternalFailure</N"
+	"ame><Description>A failure has occured inside the switch to provide an unexpected value (no necessarily no value)</De"
+	"scription><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unav"
+	"ailabilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>"
+	"Omission-neutral</Name><Description>No signal on the neutral port</Description><Severity>0</Severity><SystemOutport>f"
+	"alse</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>WireBroken+ContactsBroken</FailureLogic><"
+	"/Cause></Causes></OutputDeviation><OutputDeviation><Name>Omission-up</Name><Description>No signal on the up port</Des"
+	"cription><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><Failure"
+	"Logic>WireBroken+ContactsBroken</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Omission-down"
+	"</Name><Description>No signal on the down port</Description><Severity>0</Severity><SystemOutport>false</SystemOutport"
+	"><Causes><Cause><Probability></Probability><FailureLogic>WireBroken+ContactsBroken</FailureLogic></Cause></Causes></O"
+	"utputDeviation><OutputDeviation><Name>Comission-neutral</Name><Severity>0</Severity><SystemOutport>false</SystemOutpo"
+	"rt><Causes><Cause><Probability></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDev"
+	"iation><OutputDeviation><Name>Comission-up</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><C"
+	"ause><Probability></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDeviation><Outpu"
+	"tDeviation><Name>Comission-down</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Proba"
+	"bility></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviation"
+	"s><ExportedPropagations></ExportedPropagations></FailureData></Current></Implementations></HiPHOPS_ComponentFailureDa"
+	"ta>"
+	HiPHOPS_isPerspective	"false"
+      }
+      RequestExecContextInheritance off
+      System {
+	Name			"driver_switch"
+	Location		[660, 282, 1245, 807]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant12"
+	  SID			  "19"
+	  Position		  [15, 26, 35, 44]
+	  ZOrder		  -1
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "20"
+	  Position		  [15, 101, 35, 119]
+	  ZOrder		  -2
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  SID			  "21"
+	  Position		  [15, 46, 35, 64]
+	  ZOrder		  -3
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  SID			  "22"
+	  Position		  [15, 81, 35, 99]
+	  ZOrder		  -4
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "23"
+	  Ports			  [1, 3]
+	  Position		  [250, 20, 255, 130]
+	  ZOrder		  -5
+	  BackgroundColor	  "black"
+	  Outputs		  "3"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  "24"
+	  Ports			  [2, 1]
+	  Position		  [110, 18, 115, 127]
+	  ZOrder		  -6
+	  ForegroundColor	  "magenta"
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "control_input"
+	  SID			  "25"
+	  Position		  [130, 64, 180, 86]
+	  ZOrder		  -7
+	  ForegroundColor	  "magenta"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "down_control"
+	  SID			  "26"
+	  Ports			  [2, 1]
+	  Position		  [60, 82, 90, 118]
+	  ZOrder		  -8
+	  LibraryVersion	  "1.260"
+	  SourceBlock		  "simulink/Signal\nRouting/Manual Switch"
+	  SourceType		  "Manual Switch"
+	  sw			  "0"
+	  action		  "0"
+	  varsize		  off
+	}
+	Block {
+	  BlockType		  CombinatorialLogic
+	  Name			  "map"
+	  SID			  "27"
+	  Position		  [200, 60, 230, 90]
+	  ZOrder		  -9
+	  ForegroundColor	  "magenta"
+	  TruthTable		  "[1 0 0;0 0 1;0 1 0;1 0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "up_control"
+	  SID			  "28"
+	  Ports			  [2, 1]
+	  Position		  [60, 27, 90, 63]
+	  ZOrder		  -10
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.260"
+	  SourceBlock		  "simulink/Signal\nRouting/Manual Switch"
+	  SourceType		  "Manual Switch"
+	  sw			  "1"
+	  action		  "0"
+	  varsize		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "neutral"
+	  SID			  "29"
+	  Position		  [275, 33, 305, 47]
+	  ZOrder		  -11
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "up"
+	  SID			  "30"
+	  Position		  [275, 68, 305, 82]
+	  ZOrder		  -12
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "down"
+	  SID			  "31"
+	  Position		  [275, 103, 305, 117]
+	  ZOrder		  -13
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "control_input"
+	  SrcPort		  1
+	  DstBlock		  "map"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Constant12"
+	  SrcPort		  1
+	  DstBlock		  "up_control"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "up_control"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "down_control"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "down_control"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "down_control"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "control_input"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "up_control"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "map"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "neutral"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "up"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "down"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "passenger_switch"
+      SID		      "32"
+      Ports		      [0, 3]
+      Position		      [80, 130, 170, 190]
+      ZOrder		      -2
+      List {
+	ListType		RTWdata
+	HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false</Inc"
+	"ludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</ExcludeFromO"
+	"ptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCurrentModel</S"
+	"ubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent><Name>WireBroken"
+	"</Name><Description>There is a loose wire connection or the wire has been damaged and no long sends commands</Descrip"
+	"tion><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unavailab"
+	"ilityFormula></BasicEvent><BasicEvent><Name>ContactsBroken</Name><Description>The contacts have been no damaged and n"
+	"o long open and close the circuit as expected.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</Failu"
+	"reRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>InternalFailure</N"
+	"ame><Description>A failure has occured inside the switch to provide an unexpected value (no necessarily no value)</De"
+	"scription><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unav"
+	"ailabilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>"
+	"Omission-neutral</Name><Description>No signal on the neutral port</Description><Severity>0</Severity><SystemOutport>f"
+	"alse</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>WireBroken+ContactsBroken</FailureLogic><"
+	"/Cause></Causes></OutputDeviation><OutputDeviation><Name>Omission-up</Name><Description>No signal on the up port</Des"
+	"cription><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><Failure"
+	"Logic>WireBroken+ContactsBroken</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Omission-down"
+	"</Name><Description>No signal on the down port</Description><Severity>0</Severity><SystemOutport>false</SystemOutport"
+	"><Causes><Cause><Probability></Probability><FailureLogic>WireBroken+ContactsBroken</FailureLogic></Cause></Causes></O"
+	"utputDeviation><OutputDeviation><Name>Comission-neutral</Name><Severity>0</Severity><SystemOutport>false</SystemOutpo"
+	"rt><Causes><Cause><Probability></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDev"
+	"iation><OutputDeviation><Name>Comission-up</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><C"
+	"ause><Probability></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDeviation><Outpu"
+	"tDeviation><Name>Comission-down</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Proba"
+	"bility></Probability><FailureLogic>InternalFailure</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviation"
+	"s><ExportedPropagations></ExportedPropagations></FailureData></Current></Implementations></HiPHOPS_ComponentFailureDa"
+	"ta>"
+	HiPHOPS_isPerspective	"false"
+      }
+      RequestExecContextInheritance off
+      System {
+	Name			"passenger_switch"
+	Location		[984, 52, 1359, 387]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant12"
+	  SID			  "33"
+	  Position		  [15, 26, 35, 44]
+	  ZOrder		  -1
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "34"
+	  Position		  [15, 101, 35, 119]
+	  ZOrder		  -2
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  SID			  "35"
+	  Position		  [15, 46, 35, 64]
+	  ZOrder		  -3
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  SID			  "36"
+	  Position		  [15, 81, 35, 99]
+	  ZOrder		  -4
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "37"
+	  Ports			  [1, 3]
+	  Position		  [250, 20, 255, 130]
+	  ZOrder		  -5
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  "38"
+	  Ports			  [2, 1]
+	  Position		  [110, 18, 115, 127]
+	  ZOrder		  -6
+	  ForegroundColor	  "magenta"
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "control_input"
+	  SID			  "39"
+	  Position		  [130, 64, 180, 86]
+	  ZOrder		  -7
+	  ForegroundColor	  "magenta"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "down_control"
+	  SID			  "40"
+	  Ports			  [2, 1]
+	  Position		  [60, 82, 90, 118]
+	  ZOrder		  -8
+	  LibraryVersion	  "1.260"
+	  SourceBlock		  "simulink/Signal\nRouting/Manual Switch"
+	  SourceType		  "Manual Switch"
+	  sw			  "0"
+	  action		  "0"
+	  varsize		  off
+	}
+	Block {
+	  BlockType		  CombinatorialLogic
+	  Name			  "map"
+	  SID			  "41"
+	  Position		  [200, 60, 230, 90]
+	  ZOrder		  -9
+	  ForegroundColor	  "magenta"
+	  TruthTable		  "[1 0 0;0 0 1;0 1 0;1 0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "up_control"
+	  SID			  "42"
+	  Ports			  [2, 1]
+	  Position		  [60, 27, 90, 63]
+	  ZOrder		  -10
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.260"
+	  SourceBlock		  "simulink/Signal\nRouting/Manual Switch"
+	  SourceType		  "Manual Switch"
+	  sw			  "0"
+	  action		  "0"
+	  varsize		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "neutral"
+	  SID			  "43"
+	  Position		  [275, 33, 305, 47]
+	  ZOrder		  -11
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "up"
+	  SID			  "44"
+	  Position		  [275, 68, 305, 82]
+	  ZOrder		  -12
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "down"
+	  SID			  "45"
+	  Position		  [275, 103, 305, 117]
+	  ZOrder		  -13
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "down"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "up"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "neutral"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "map"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "up_control"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "control_input"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "down_control"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "down_control"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "down_control"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "up_control"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Constant12"
+	  SrcPort		  1
+	  DstBlock		  "up_control"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "control_input"
+	  SrcPort		  1
+	  DstBlock		  "map"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "power_window_control_system"
+      SID		      "46"
+      Ports		      [7, 2]
+      Position		      [270, 35, 425, 225]
+      ZOrder		      -17
+      RequestExecContextInheritance off
+      System {
+	Name			"power_window_control_system"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"182"
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver_neutral"
+	  SID			  "47"
+	  Position		  [230, 143, 260, 157]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver_up"
+	  SID			  "48"
+	  Position		  [230, 173, 260, 187]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver_down"
+	  SID			  "49"
+	  Position		  [230, 203, 260, 217]
+	  ZOrder		  -3
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "passenger_neutral"
+	  SID			  "50"
+	  Position		  [230, 308, 260, 322]
+	  ZOrder		  -4
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "passenger_up"
+	  SID			  "51"
+	  Position		  [230, 338, 260, 352]
+	  ZOrder		  -5
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "passenger_down"
+	  SID			  "52"
+	  Position		  [230, 368, 260, 382]
+	  ZOrder		  -6
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "armature_current"
+	  SID			  "53"
+	  Position		  [720, 138, 750, 152]
+	  ZOrder		  -7
+	  BlockMirror		  on
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "controller"
+	  SID			  "145"
+	  Ports			  [4, 2]
+	  Position		  [510, 215, 660, 295]
+	  ZOrder		  -17
+	  List {
+	    ListType		    RTWdata
+	    HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false<"
+	    "/IncludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</Excl"
+	    "udeFromOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>Both</HBlockType><SubsystemLocation>FromCurrentMo"
+	    "del</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent><Name>"
+	    "ControllerFailure</Name><Description>The control system has a software internal failure.</Description><Unavailabi"
+	    "lityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula"
+	    "></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>Omission-move"
+	    "_up</Name><Severity>0</Severity><SystemOutport>true</SystemOutport><Causes><Cause><Probability></Probability><Fai"
+	    "lureLogic>Omission-driver+Omission-passenger+Omission-obstacle+Omission-endstop</FailureLogic></Cause></Causes></"
+	    "OutputDeviation><OutputDeviation><Name>Omission-move_down</Name><Severity>0</Severity><SystemOutport>true</System"
+	    "Outport><Causes><Cause><Probability></Probability><FailureLogic>Omission-driver+Omission-passenger+Omission-endst"
+	    "op</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Comission-move_up</Name><Severity>0</S"
+	    "everity><SystemOutport>true</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>ControllerFail"
+	    "ure+Comission-driver+Comission-passenger+Comission-obstacle+Comission-endstop</FailureLogic></Cause></Causes></Ou"
+	    "tputDeviation><OutputDeviation><Name>Comission-move_down</Name><Severity>0</Severity><SystemOutport>true</SystemO"
+	    "utport><Causes><Cause><Probability></Probability><FailureLogic>ControllerFailure+Comission-driver+Comission-passe"
+	    "nger+Comission-endstop</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>InvalidValue-move_"
+	    "up</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><Fai"
+	    "lureLogic>Comission-driver+Comission-passenger+ControllerFailure</FailureLogic></Cause></Causes></OutputDeviation"
+	    "><OutputDeviation><Name>InvalidValue-move_down</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><C"
+	    "auses><Cause><Probability></Probability><FailureLogic>Comission-driver+Comission-passenger+ControllerFailure</Fai"
+	    "lureLogic></Cause></Causes></OutputDeviation></OutputDeviations><ExportedPropagations></ExportedPropagations></Fa"
+	    "ilureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+	    HiPHOPS_isPerspective   "false"
+	  }
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "controller"
+	    Location		    [660, 346, 1214, 830]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "endstop"
+	      SID		      "146"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "obstacle"
+	      SID		      "147"
+	      Position		      [110, 148, 140, 162]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "driver"
+	      SID		      "148"
+	      Position		      [110, 188, 140, 202]
+	      ZOrder		      -1
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "passenger"
+	      SID		      "149"
+	      Position		      [110, 228, 140, 242]
+	      ZOrder		      -1
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "move_up"
+	      SID		      "150"
+	      Position		      [360, 103, 390, 117]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "move_down"
+	      SID		      "151"
+	      Position		      [360, 138, 390, 152]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "detect_obstacle_endstop"
+	  SID			  "152"
+	  Ports			  [2, 2]
+	  Position		  [515, 129, 650, 191]
+	  ZOrder		  -17
+	  BlockMirror		  on
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "detect_obstacle_endstop"
+	    Location		    [324, 172, 1272, 688]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "armature_current"
+	      SID		      "153"
+	      Position		      [60, 53, 90, 67]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "move_up"
+	      SID		      "154"
+	      Position		      [60, 148, 90, 162]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "detect_endstop"
+	      SID		      "155"
+	      Ports		      [1, 1]
+	      Position		      [365, 32, 500, 88]
+	      ZOrder		      -17
+	      List {
+		ListType		RTWdata
+		HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false</In"
+		"cludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</ExcludeFro"
+		"mOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCurrentModel"
+		"</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent><Name>Softwa"
+		"reFailure</Name><Description>The control software failed to detect the end stop based on the current</Description><U"
+		"navailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityF"
+		"ormula></BasicEvent><BasicEvent><Name>HardwareFailure</Name><Description>The hardware has produced a failure</Descri"
+		"ption><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unavail"
+		"abilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>Om"
+		"ission-endstop</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probabi"
+		"lity><FailureLogic>Omission-armature_current+SoftwareFailure+HardwareFailure</FailureLogic></Cause></Causes></Output"
+		"Deviation><OutputDeviation><Name>Comission-endstop</Name><Severity>0</Severity><SystemOutport>true</SystemOutport><C"
+		"auses><Cause><Probability></Probability><FailureLogic>SoftwareFailure + Comission-armature_current + HardwareFailure"
+		"</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviations><ExportedPropagations></ExportedPropagations></"
+		"FailureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+		HiPHOPS_isPerspective	"false"
+	      }
+	      RequestExecContextInheritance off
+	      System {
+		Name			"detect_endstop"
+		Location		[638, 379, 1192, 863]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "armature_current"
+		  SID			  "156"
+		  Position		  [110, 103, 140, 117]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "endstop"
+		  SID			  "157"
+		  Position		  [360, 103, 390, 117]
+		  ZOrder		  -2
+		  IconDisplay		  "Port number"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "detect_obstacle"
+	      SID		      "158"
+	      Ports		      [2, 1]
+	      Position		      [365, 142, 505, 198]
+	      ZOrder		      -17
+	      List {
+		ListType		RTWdata
+		HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false</In"
+		"cludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</ExcludeFro"
+		"mOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCurrentModel"
+		"</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent><Name>Softwa"
+		"reFailure</Name><Description>The control software failed to detect the object</Description><UnavailabilityFormula><C"
+		"onstant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent><Ba"
+		"sicEvent><Name>HardwareFailure</Name><Description>The hardware has produced a failure in the system</Description><Un"
+		"availabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityFo"
+		"rmula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>Omission-ob"
+		"stacle</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><Fa"
+		"ilureLogic>Omission-armature_current</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Comissi"
+		"on-obstacle</Name><Severity>0</Severity><SystemOutport>true</SystemOutport><Causes><Cause><Probability></Probability"
+		"><FailureLogic>SoftwareFailure + Comission-armature_current+HardwareFailure</FailureLogic></Cause></Causes></OutputD"
+		"eviation></OutputDeviations><ExportedPropagations></ExportedPropagations></FailureData></Current></Implementations><"
+		"/HiPHOPS_ComponentFailureData>"
+		HiPHOPS_isPerspective	"false"
+	      }
+	      RequestExecContextInheritance off
+	      System {
+		Name			"detect_obstacle"
+		Location		[694, 350, 1248, 834]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "move_up"
+		  SID			  "159"
+		  Position		  [110, 103, 140, 117]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "armature_current"
+		  SID			  "160"
+		  Position		  [110, 163, 140, 177]
+		  ZOrder		  -1
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "obstacle"
+		  SID			  "161"
+		  Position		  [360, 103, 390, 117]
+		  ZOrder		  -2
+		  IconDisplay		  "Port number"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "obstacle"
+	      SID		      "165"
+	      Position		      [635, 163, 665, 177]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "endstop"
+	      SID		      "166"
+	      Position		      [635, 53, 665, 67]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "detect_obstacle"
+	      SrcPort		      1
+	      DstBlock		      "obstacle"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "detect_endstop"
+	      SrcPort		      1
+	      DstBlock		      "endstop"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "move_up"
+	      SrcPort		      1
+	      DstBlock		      "detect_obstacle"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "armature_current"
+	      SrcPort		      1
+	      Points		      [140, 0]
+	      Branch {
+		ZOrder			5
+		DstBlock		"detect_endstop"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			6
+		Points			[0, 125]
+		DstBlock		"detect_obstacle"
+		DstPort			2
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "validate_driver"
+	  SID			  "76"
+	  Ports			  [4, 1]
+	  Position		  [305, 130, 425, 260]
+	  ZOrder		  -19
+	  List {
+	    ListType		    RTWdata
+	    HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false<"
+	    "/IncludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</Excl"
+	    "udeFromOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCur"
+	    "rentModel</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent>"
+	    "<Name>HardwareFailure</Name><Description>The hardware has failed to validate the inputs and is providing an incor"
+	    "rect output.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRa"
+	    "te></Constant></UnavailabilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations"
+	    "><OutputDeviation><Name>Omission-neutral_up_down</Name><Severity>0</Severity><SystemOutport>false</SystemOutport>"
+	    "<Causes><Cause><Probability></Probability><FailureLogic>Omission-neutral+Omission-up+Omission-down</FailureLogic>"
+	    "</Cause></Causes></OutputDeviation><OutputDeviation><Name>Comission-neutral_up_down</Name><Severity>0</Severity><"
+	    "SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>Comission-up+Comission"
+	    "-down+Comission-neutral+HardwareFailure</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviations><Expo"
+	    "rtedPropagations></ExportedPropagations></FailureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+	    HiPHOPS_isPerspective   "false"
+	  }
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "validate_driver"
+	    Location		    [-8, -8, 1374, 736]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "neutral"
+	      SID		      "77"
+	      Position		      [75, 58, 105, 72]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "up"
+	      SID		      "78"
+	      Position		      [75, 128, 105, 142]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "down"
+	      SID		      "79"
+	      Position		      [70, 213, 100, 227]
+	      ZOrder		      -3
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "reset"
+	      SID		      "80"
+	      Position		      [65, 308, 95, 322]
+	      ZOrder		      -4
+	      ForegroundColor	      "darkGreen"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "81"
+	      Ports		      [3, 1]
+	      Position		      [485, 131, 490, 169]
+	      ZOrder		      -5
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "check_down"
+	      SID		      "82"
+	      Ports		      [2, 1]
+	      Position		      [140, 204, 250, 266]
+	      ZOrder		      -6
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"check_down"
+		Location		[165, 204, 692, 649]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "action"
+		  SID			  "83"
+		  Position		  [75, 33, 105, 47]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "reset"
+		  SID			  "84"
+		  Position		  [75, 88, 105, 102]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "allow_action"
+		  SID			  "85"
+		  Ports			  [2, 1]
+		  Position		  [230, 51, 260, 84]
+		  ZOrder		  -3
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "overrule"
+		  SID			  "86"
+		  Ports			  [1, 1]
+		  Position		  [130, 78, 155, 112]
+		  ZOrder		  -4
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "checked_action"
+		  SID			  "87"
+		  Position		  [340, 63, 370, 77]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "reset"
+		  SrcPort		  1
+		  DstBlock		  "overrule"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "allow_action"
+		  SrcPort		  1
+		  DstBlock		  "checked_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "action"
+		  SrcPort		  1
+		  Points		  [75, 0; 0, 20]
+		  DstBlock		  "allow_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "overrule"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -20]
+		  DstBlock		  "allow_action"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "check_up"
+	      SID		      "88"
+	      Ports		      [2, 1]
+	      Position		      [140, 119, 250, 181]
+	      ZOrder		      -7
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"check_up"
+		Location		[165, 204, 692, 649]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "action"
+		  SID			  "89"
+		  Position		  [75, 33, 105, 47]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "reset"
+		  SID			  "90"
+		  Position		  [75, 88, 105, 102]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "allow_action"
+		  SID			  "91"
+		  Ports			  [2, 1]
+		  Position		  [230, 51, 260, 84]
+		  ZOrder		  -3
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "overrule"
+		  SID			  "92"
+		  Ports			  [1, 1]
+		  Position		  [130, 78, 155, 112]
+		  ZOrder		  -4
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "checked_action"
+		  SID			  "93"
+		  Position		  [340, 63, 370, 77]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "overrule"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -20]
+		  DstBlock		  "allow_action"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "action"
+		  SrcPort		  1
+		  Points		  [75, 0; 0, 20]
+		  DstBlock		  "allow_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "allow_action"
+		  SrcPort		  1
+		  DstBlock		  "checked_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "reset"
+		  SrcPort		  1
+		  DstBlock		  "overrule"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "mutually_exclusive"
+	      SID		      "94"
+	      Ports		      [3, 3]
+	      Position		      [315, 23, 435, 277]
+	      ZOrder		      -8
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"mutually_exclusive"
+		Location		[352, 52, 940, 545]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "neutral"
+		  SID			  "95"
+		  Position		  [30, 28, 60, 42]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "up"
+		  SID			  "96"
+		  Position		  [30, 128, 60, 142]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "down"
+		  SID			  "97"
+		  Position		  [25, 198, 55, 212]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "default_neutral"
+		  SID			  "98"
+		  Ports			  [2, 1]
+		  Position		  [370, 36, 400, 69]
+		  ZOrder		  -4
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "neutral_after_up"
+		  SID			  "99"
+		  Ports			  [2, 1]
+		  Position		  [285, 26, 315, 59]
+		  ZOrder		  -5
+		  ForegroundColor	  "darkGreen"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_down"
+		  SID			  "100"
+		  Ports			  [1, 1]
+		  Position		  [90, 188, 120, 222]
+		  ZOrder		  -6
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_up"
+		  SID			  "101"
+		  Ports			  [1, 1]
+		  Position		  [225, 73, 255, 107]
+		  ZOrder		  -7
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_up1"
+		  SID			  "102"
+		  Ports			  [1, 1]
+		  Position		  [285, 193, 315, 227]
+		  ZOrder		  -8
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "up_after_down"
+		  SID			  "103"
+		  Ports			  [2, 1]
+		  Position		  [170, 126, 200, 159]
+		  ZOrder		  -9
+		  ForegroundColor	  "darkGreen"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "up_after_down1"
+		  SID			  "104"
+		  Ports			  [2, 1]
+		  Position		  [215, 191, 245, 224]
+		  ZOrder		  -10
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_neutral"
+		  SID			  "105"
+		  Position		  [465, 48, 495, 62]
+		  ZOrder		  -11
+		  ForegroundColor	  "blue"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_up"
+		  SID			  "106"
+		  Position		  [420, 138, 450, 152]
+		  ZOrder		  -12
+		  ForegroundColor	  "blue"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_down"
+		  SID			  "107"
+		  Position		  [420, 238, 450, 252]
+		  ZOrder		  -13
+		  ForegroundColor	  "blue"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "not_down"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, -55]
+		  DstBlock		  "up_after_down"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "up_after_down"
+		  SrcPort		  1
+		  Points		  [0, 0]
+		  Branch {
+		    ZOrder		    3
+		    Points		    [0, -55]
+		    DstBlock		    "not_up"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    4
+		    DstBlock		    "validated_up"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "not_up"
+		  SrcPort		  1
+		  Points		  [5, 0; 0, -40]
+		  DstBlock		  "neutral_after_up"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "down"
+		  SrcPort		  1
+		  Points		  [5, 0]
+		  Branch {
+		    ZOrder		    7
+		    DstBlock		    "not_down"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, 35]
+		    Branch {
+		    ZOrder		    9
+		    Points		    [105, 0; 0, -25]
+		    DstBlock		    "up_after_down1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    10
+		    Points		    [0, 5]
+		    DstBlock		    "validated_down"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  11
+		  SrcBlock		  "neutral"
+		  SrcPort		  1
+		  DstBlock		  "neutral_after_up"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "up"
+		  SrcPort		  1
+		  Points		  [50, 0]
+		  Branch {
+		    ZOrder		    13
+		    DstBlock		    "up_after_down"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    14
+		    Points		    [-5, 0; 0, 50; 90, 0]
+		    DstBlock		    "up_after_down1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "up_after_down1"
+		  SrcPort		  1
+		  DstBlock		  "not_up1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "neutral_after_up"
+		  SrcPort		  1
+		  DstBlock		  "default_neutral"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "default_neutral"
+		  SrcPort		  1
+		  DstBlock		  "validated_neutral"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  18
+		  SrcBlock		  "not_up1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -150]
+		  DstBlock		  "default_neutral"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "neutral_up_down"
+	      SID		      "108"
+	      Position		      [530, 143, 560, 157]
+	      ZOrder		      -9
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "neutral_up_down"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "check_up"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "neutral"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "up"
+	      SrcPort		      1
+	      DstBlock		      "check_up"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "down"
+	      SrcPort		      1
+	      DstBlock		      "check_down"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 75]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      2
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "check_down"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      3
+	      Points		      [15, 0; 0, -75]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "validate_passenger"
+	  SID			  "109"
+	  Ports			  [4, 1]
+	  Position		  [305, 295, 425, 425]
+	  ZOrder		  -20
+	  List {
+	    ListType		    RTWdata
+	    HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false<"
+	    "/IncludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</Excl"
+	    "udeFromOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCur"
+	    "rentModel</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent>"
+	    "<Name>HardwareFailure</Name><Description>The hardware has failed to validate the inputs and is providing an incor"
+	    "rect output.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRa"
+	    "te></Constant></UnavailabilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations"
+	    "><OutputDeviation><Name>Omission-neutral_up_down</Name><Severity>0</Severity><SystemOutport>false</SystemOutport>"
+	    "<Causes><Cause><Probability></Probability><FailureLogic>Omission-neutral+Omission-up+Omission-down</FailureLogic>"
+	    "</Cause></Causes></OutputDeviation><OutputDeviation><Name>Comission-neutral_up_down</Name><Severity>0</Severity><"
+	    "SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>Comission-up+Comission"
+	    "-neutral+Comission-down+HardwareFailure</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviations><Expo"
+	    "rtedPropagations></ExportedPropagations></FailureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+	    HiPHOPS_isPerspective   "false"
+	  }
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "validate_passenger"
+	    Location		    [39, 207, 694, 746]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "neutral"
+	      SID		      "110"
+	      Position		      [75, 58, 105, 72]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "up"
+	      SID		      "111"
+	      Position		      [75, 128, 105, 142]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "down"
+	      SID		      "112"
+	      Position		      [70, 213, 100, 227]
+	      ZOrder		      -3
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "reset"
+	      SID		      "113"
+	      Position		      [65, 308, 95, 322]
+	      ZOrder		      -4
+	      ForegroundColor	      "darkGreen"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "114"
+	      Ports		      [3, 1]
+	      Position		      [485, 131, 490, 169]
+	      ZOrder		      -5
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "check_down"
+	      SID		      "115"
+	      Ports		      [2, 1]
+	      Position		      [140, 204, 250, 266]
+	      ZOrder		      -6
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"check_down"
+		Location		[165, 204, 692, 649]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "action"
+		  SID			  "116"
+		  Position		  [75, 33, 105, 47]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "reset"
+		  SID			  "117"
+		  Position		  [75, 88, 105, 102]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "allow_action"
+		  SID			  "118"
+		  Ports			  [2, 1]
+		  Position		  [230, 51, 260, 84]
+		  ZOrder		  -3
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "overrule"
+		  SID			  "119"
+		  Ports			  [1, 1]
+		  Position		  [130, 78, 155, 112]
+		  ZOrder		  -4
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "checked_action"
+		  SID			  "120"
+		  Position		  [340, 63, 370, 77]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "reset"
+		  SrcPort		  1
+		  DstBlock		  "overrule"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "allow_action"
+		  SrcPort		  1
+		  DstBlock		  "checked_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "action"
+		  SrcPort		  1
+		  Points		  [75, 0; 0, 20]
+		  DstBlock		  "allow_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "overrule"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -20]
+		  DstBlock		  "allow_action"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "check_up"
+	      SID		      "121"
+	      Ports		      [2, 1]
+	      Position		      [140, 119, 250, 181]
+	      ZOrder		      -7
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"check_up"
+		Location		[165, 204, 692, 649]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "action"
+		  SID			  "122"
+		  Position		  [75, 33, 105, 47]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "reset"
+		  SID			  "123"
+		  Position		  [75, 88, 105, 102]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "allow_action"
+		  SID			  "124"
+		  Ports			  [2, 1]
+		  Position		  [230, 51, 260, 84]
+		  ZOrder		  -3
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "overrule"
+		  SID			  "125"
+		  Ports			  [1, 1]
+		  Position		  [130, 78, 155, 112]
+		  ZOrder		  -4
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "checked_action"
+		  SID			  "126"
+		  Position		  [340, 63, 370, 77]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "overrule"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -20]
+		  DstBlock		  "allow_action"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "action"
+		  SrcPort		  1
+		  Points		  [75, 0; 0, 20]
+		  DstBlock		  "allow_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "allow_action"
+		  SrcPort		  1
+		  DstBlock		  "checked_action"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "reset"
+		  SrcPort		  1
+		  DstBlock		  "overrule"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "mutually_exclusive"
+	      SID		      "127"
+	      Ports		      [3, 3]
+	      Position		      [315, 23, 435, 277]
+	      ZOrder		      -8
+	      ForegroundColor	      "gray"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"mutually_exclusive"
+		Location		[352, 52, 940, 545]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "neutral"
+		  SID			  "128"
+		  Position		  [30, 28, 60, 42]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "up"
+		  SID			  "129"
+		  Position		  [30, 128, 60, 142]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "down"
+		  SID			  "130"
+		  Position		  [25, 198, 55, 212]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "default_neutral"
+		  SID			  "131"
+		  Ports			  [2, 1]
+		  Position		  [370, 36, 400, 69]
+		  ZOrder		  -4
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "neutral_after_up"
+		  SID			  "132"
+		  Ports			  [2, 1]
+		  Position		  [285, 26, 315, 59]
+		  ZOrder		  -5
+		  ForegroundColor	  "darkGreen"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_down"
+		  SID			  "133"
+		  Ports			  [1, 1]
+		  Position		  [90, 188, 120, 222]
+		  ZOrder		  -6
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_up"
+		  SID			  "134"
+		  Ports			  [1, 1]
+		  Position		  [225, 73, 255, 107]
+		  ZOrder		  -7
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "not_up1"
+		  SID			  "135"
+		  Ports			  [1, 1]
+		  Position		  [285, 193, 315, 227]
+		  ZOrder		  -8
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "NOT"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "up_after_down"
+		  SID			  "136"
+		  Ports			  [2, 1]
+		  Position		  [170, 126, 200, 159]
+		  ZOrder		  -9
+		  ForegroundColor	  "darkGreen"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "up_after_down1"
+		  SID			  "137"
+		  Ports			  [2, 1]
+		  Position		  [215, 191, 245, 224]
+		  ZOrder		  -10
+		  ForegroundColor	  "darkGreen"
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_neutral"
+		  SID			  "138"
+		  Position		  [465, 48, 495, 62]
+		  ZOrder		  -11
+		  ForegroundColor	  "blue"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_up"
+		  SID			  "139"
+		  Position		  [420, 138, 450, 152]
+		  ZOrder		  -12
+		  ForegroundColor	  "blue"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "validated_down"
+		  SID			  "140"
+		  Position		  [420, 238, 450, 252]
+		  ZOrder		  -13
+		  ForegroundColor	  "blue"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "not_down"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, -55]
+		  DstBlock		  "up_after_down"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "up_after_down"
+		  SrcPort		  1
+		  Points		  [0, 0]
+		  Branch {
+		    ZOrder		    3
+		    Points		    [0, -55]
+		    DstBlock		    "not_up"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    4
+		    DstBlock		    "validated_up"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "not_up"
+		  SrcPort		  1
+		  Points		  [5, 0; 0, -40]
+		  DstBlock		  "neutral_after_up"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "down"
+		  SrcPort		  1
+		  Points		  [5, 0]
+		  Branch {
+		    ZOrder		    7
+		    DstBlock		    "not_down"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, 35]
+		    Branch {
+		    ZOrder		    9
+		    Points		    [105, 0; 0, -25]
+		    DstBlock		    "up_after_down1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    10
+		    Points		    [0, 5]
+		    DstBlock		    "validated_down"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  11
+		  SrcBlock		  "neutral"
+		  SrcPort		  1
+		  DstBlock		  "neutral_after_up"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "up"
+		  SrcPort		  1
+		  Points		  [50, 0]
+		  Branch {
+		    ZOrder		    13
+		    DstBlock		    "up_after_down"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    14
+		    Points		    [-5, 0; 0, 50; 90, 0]
+		    DstBlock		    "up_after_down1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "up_after_down1"
+		  SrcPort		  1
+		  DstBlock		  "not_up1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "neutral_after_up"
+		  SrcPort		  1
+		  DstBlock		  "default_neutral"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "default_neutral"
+		  SrcPort		  1
+		  DstBlock		  "validated_neutral"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  18
+		  SrcBlock		  "not_up1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -150]
+		  DstBlock		  "default_neutral"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "neutral_up_down"
+	      SID		      "141"
+	      Position		      [530, 143, 560, 157]
+	      ZOrder		      -9
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "neutral_up_down"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "check_up"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "neutral"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "up"
+	      SrcPort		      1
+	      DstBlock		      "check_up"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "down"
+	      SrcPort		      1
+	      DstBlock		      "check_down"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 75]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      2
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "mutually_exclusive"
+	      SrcPort		      3
+	      Points		      [20, 0; 0, -75]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "check_down"
+	      SrcPort		      1
+	      DstBlock		      "mutually_exclusive"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "move_up"
+	  SID			  "142"
+	  Position		  [720, 228, 750, 242]
+	  ZOrder		  -21
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "move_down"
+	  SID			  "143"
+	  Position		  [720, 268, 750, 282]
+	  ZOrder		  -22
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "passenger_neutral"
+	  SrcPort		  1
+	  DstBlock		  "validate_passenger"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "passenger_up"
+	  SrcPort		  1
+	  DstBlock		  "validate_passenger"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "passenger_down"
+	  SrcPort		  1
+	  DstBlock		  "validate_passenger"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "driver_neutral"
+	  SrcPort		  1
+	  DstBlock		  "validate_driver"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "driver_down"
+	  SrcPort		  1
+	  DstBlock		  "validate_driver"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "armature_current"
+	  SrcPort		  1
+	  DstBlock		  "detect_obstacle_endstop"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "detect_obstacle_endstop"
+	  SrcPort		  2
+	  Points		  [-35, 0; 0, 50]
+	  DstBlock		  "controller"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "detect_obstacle_endstop"
+	  SrcPort		  1
+	  Points		  [-45, 0; 0, 100]
+	  DstBlock		  "controller"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "validate_driver"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, 70]
+	  DstBlock		  "controller"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "controller"
+	  SrcPort		  2
+	  DstBlock		  "move_down"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "controller"
+	  SrcPort		  1
+	  Points		  [19, 0]
+	  Branch {
+	    ZOrder		    23
+	    DstBlock		    "move_up"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    20
+	    Points		    [0, -60]
+	    DstBlock		    "detect_obstacle_endstop"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "validate_passenger"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, -75]
+	  DstBlock		  "controller"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "driver_up"
+	  SrcPort		  1
+	  DstBlock		  "validate_driver"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "window_system"
+      SID		      "167"
+      Ports		      [2, 4]
+      Position		      [495, 38, 635, 227]
+      ZOrder		      -18
+      RequestExecContextInheritance off
+      System {
+	Name			"window_system"
+	Location		[434, 165, 1161, 694]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "move_up"
+	  SID			  "168"
+	  Position		  [25, 148, 55, 162]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "move_down"
+	  SID			  "169"
+	  Position		  [25, 223, 55, 237]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "actuator"
+	  SID			  "170"
+	  Ports			  [4, 2]
+	  Position		  [160, 91, 265, 249]
+	  ZOrder		  -17
+	  List {
+	    ListType		    RTWdata
+	    HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false<"
+	    "/IncludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</Excl"
+	    "udeFromOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCur"
+	    "rentModel</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent>"
+	    "<Name>CurrentSensorFailure</Name><Description>The current sensor in the actuator has failed and is no longer prov"
+	    "iding a value.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</Repair"
+	    "Rate></Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>BatteryFailure</Name><Description>The batt"
+	    "ery is no longer providing current to the motor.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6<"
+	    "/FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>CurrentS"
+	    "ensorDamaged</Name><Description>The current sensor has been damage or is not calibrated properly and is providing"
+	    " an incorrect current value.</Description><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><Repair"
+	    "Rate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>MotorFailure</Name><Descript"
+	    "ion>The motor is no longer providing current for the sensor to read and is not providing any torque.</Description"
+	    "><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></Unavailab"
+	    "ilityFormula></BasicEvent></BasicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>O"
+	    "mission-wL</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probabil"
+	    "ity><FailureLogic>Omission-move_up+Omission-move_down+MotorFailure+BatteryFailure</FailureLogic></Cause></Causes>"
+	    "</OutputDeviation><OutputDeviation><Name>Omission-la</Name><Severity>0</Severity><SystemOutport>false</SystemOutp"
+	    "ort><Causes><Cause><Probability></Probability><FailureLogic>CurrentSensorFailure+BatteryFailure</FailureLogic></C"
+	    "ause></Causes></OutputDeviation><OutputDeviation><Name>Comission-la</Name><Severity>0</Severity><SystemOutport>fa"
+	    "lse</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>CurrentSensorDamaged</FailureLogic></C"
+	    "ause></Causes></OutputDeviation><OutputDeviation><Name>Comission-wL</Name><Severity>0</Severity><SystemOutport>fa"
+	    "lse</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>Comission-move_up + Comission-move_dow"
+	    "n</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviations><ExportedPropagations></ExportedPropagation"
+	    "s></FailureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+	    HiPHOPS_isPerspective   "false"
+	  }
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "actuator"
+	    Location		    [589, 215, 1143, 699]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "tL"
+	      SID		      "171"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vcc"
+	      SID		      "172"
+	      Position		      [110, 148, 140, 162]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "move_up"
+	      SID		      "173"
+	      Position		      [110, 198, 140, 212]
+	      ZOrder		      -1
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "move_down"
+	      SID		      "174"
+	      Position		      [110, 248, 140, 262]
+	      ZOrder		      -1
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "la"
+	      SID		      "175"
+	      Position		      [360, 103, 390, 117]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "wL"
+	      SID		      "176"
+	      Position		      [360, 163, 390, 177]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "plant"
+	  SID			  "177"
+	  Ports			  [1, 3]
+	  Position		  [330, 104, 435, 226]
+	  ZOrder		  -17
+	  List {
+	    ListType		    RTWdata
+	    HiPHOPS_Component_Failure_Data "<HiPHOPS_ComponentFailureData><RiskTime>0</RiskTime><IncludeInOptimisation>false<"
+	    "/IncludeInOptimisation><Implementations><Current><Name>Implementation1</Name><ExcludeFromOptimisation>false</Excl"
+	    "udeFromOptimisation><Cost>0</Cost><Weight>0</Weight><HBlockType>NotRefined</HBlockType><SubsystemLocation>FromCur"
+	    "rentModel</SubsystemLocation><FailureData><ComponentFailureRate>0</ComponentFailureRate><BasicEvents><BasicEvent>"
+	    "<Name>GearJammed</Name><UnavailabilityFormula><Constant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate>"
+	    "</Constant></UnavailabilityFormula></BasicEvent><BasicEvent><Name>GlassJammed</Name><UnavailabilityFormula><Const"
+	    "ant><FailureRate>1e-6</FailureRate><RepairRate>0</RepairRate></Constant></UnavailabilityFormula></BasicEvent></Ba"
+	    "sicEvents><PotentialCCFs></PotentialCCFs><OutputDeviations><OutputDeviation><Name>Omission-F_x_v</Name><Severity>"
+	    "0</Severity><SystemOutport>true</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic>Omission-w"
+	    "i+GearJammed+GlassJammed</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Omission-q</Name"
+	    "><Severity>0</Severity><SystemOutport>true</SystemOutport><Causes><Cause><Probability></Probability><FailureLogic"
+	    ">Omission-wi+GearJammed+GlassJammed</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Comis"
+	    "sion-F_x_v</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probabil"
+	    "ity><FailureLogic>Comission-wi</FailureLogic></Cause></Causes></OutputDeviation><OutputDeviation><Name>Comission-"
+	    "q</Name><Severity>0</Severity><SystemOutport>false</SystemOutport><Causes><Cause><Probability></Probability><Fail"
+	    "ureLogic>Comission-q</FailureLogic></Cause></Causes></OutputDeviation></OutputDeviations><ExportedPropagations></"
+	    "ExportedPropagations></FailureData></Current></Implementations></HiPHOPS_ComponentFailureData>"
+	    HiPHOPS_isPerspective   "false"
+	  }
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "plant"
+	    Location		    [634, 300, 1188, 784]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "wi"
+	      SID		      "178"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ti"
+	      SID		      "179"
+	      Position		      [360, 103, 390, 117]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "F_x_v"
+	      SID		      "180"
+	      Position		      [360, 163, 390, 177]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "181"
+	      Position		      [360, 208, 390, 222]
+	      ZOrder		      -2
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "window_kinematics"
+	  SID			  "182"
+	  Ports			  [1, 5]
+	  Position		  [540, 133, 545, 197]
+	  ZOrder		  -19
+	  ForegroundColor	  "gray"
+	  BackgroundColor	  "gray"
+	  Outputs		  "[1,1,2,1,4]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "armature_current"
+	  SID			  "183"
+	  Position		  [515, 73, 545, 87]
+	  ZOrder		  -20
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "force"
+	  SID			  "184"
+	  Position		  [610, 138, 640, 152]
+	  ZOrder		  -21
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "position"
+	  SID			  "185"
+	  Position		  [610, 183, 640, 197]
+	  ZOrder		  -22
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "gear_angle"
+	  SID			  "186"
+	  Position		  [495, 213, 525, 227]
+	  ZOrder		  -23
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "plant"
+	  SrcPort		  3
+	  Points		  [20, 0; 0, 15]
+	  DstBlock		  "gear_angle"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "plant"
+	  SrcPort		  2
+	  DstBlock		  "window_kinematics"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "window_kinematics"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, -10]
+	  DstBlock		  "force"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "window_kinematics"
+	  SrcPort		  4
+	  Points		  [5, 0; 0, 15]
+	  DstBlock		  "position"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "actuator"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -50]
+	  DstBlock		  "armature_current"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "plant"
+	  SrcPort		  1
+	  Points		  [0, -50; -295, 0]
+	  DstBlock		  "actuator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "move_up"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 35]
+	  DstBlock		  "actuator"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "move_down"
+	  SrcPort		  1
+	  DstBlock		  "actuator"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "actuator"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, -45]
+	  DstBlock		  "plant"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "passenger_switch"
+      SrcPort		      1
+      Points		      [25, 0; 0, -10]
+      DstBlock		      "power_window_control_system"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      5
+      SrcBlock		      "passenger_switch"
+      SrcPort		      2
+      Points		      [80, 0]
+      DstBlock		      "power_window_control_system"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      6
+      SrcBlock		      "passenger_switch"
+      SrcPort		      3
+      DstBlock		      "power_window_control_system"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      7
+      SrcBlock		      "power_window_control_system"
+      SrcPort		      1
+      DstBlock		      "window_system"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      8
+      SrcBlock		      "power_window_control_system"
+      SrcPort		      2
+      DstBlock		      "window_system"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      9
+      SrcBlock		      "window_system"
+      SrcPort		      1
+      Points		      [5, 0; 0, 195; -410, 0; 0, -55]
+      DstBlock		      "power_window_control_system"
+      DstPort		      7
+    }
+  }
+}

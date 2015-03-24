@@ -1,0 +1,17 @@
+# 5.0.0
+# com.arccore.bsw.stylesheet
+
+#######################################################  
+#Parameters excluded from generic validation
+#######################################################
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: ArcIoHwAbDigitalDemEventParameterRef
+  
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: ArcIoHwAbDigitalDiagnosticType  
+  
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: ArcIoHwAbExternalDeviceDriverRef  
+
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: ArcIoHwAbDioChannelRef

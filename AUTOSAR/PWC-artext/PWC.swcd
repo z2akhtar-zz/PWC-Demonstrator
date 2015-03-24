@@ -1,0 +1,36 @@
+package PWC
+
+import PWC.*
+import PWC.Types.*
+import PWC.Services.*
+import PWC.Services.IoHwAb.*
+import PWC.SensorsActuators.Switch.*
+import PWC.Components.WinArbitrator.*
+import PWC.Components.WinController.*
+import PWC.SensorsActuators.EndStopDtc.*
+import PWC.SensorsActuators.ObstacleDtc.*
+import PWC.SensorsActuators.MotorDriver.*
+
+composition PWCDriver {
+	prototype SwitchType Switch
+	prototype IoHwAb ioHwAb
+	prototype EndStopDtcType EndStopDtc
+	prototype MotorDriverType MotorDriver
+	prototype ObstacleDtcType ObstacleDtc
+	prototype WinControllerType WinController
+	prototype WinArbitratorType WinArbitrator
+	
+	// Hardware Abstraction connections
+	connect ioHwAb.Digital_DigitalSignal_LED1 to MotorDriver.RunMotor_1 as SR1
+	connect ioHwAb.Digital_DigitalSignal_LED2 to MotorDriver.RunMotor_2 as SR2
+    connect ioHwAb.Digital_DigitalSignal_Obstacle to ObstacleDtc.isObstacle as SR3
+	connect ioHwAb.Digital_DigitalSignal_EndStop to EndStopDtc.isEndStop as SR4
+
+	// PWC connections
+	connect Switch.req to WinArbitrator.req_d as SR5	
+	connect WinArbitrator.req_a to WinController.req as SR6
+	
+	connect WinController.cmd to MotorDriver.cmd as SR7	
+	connect ObstacleDtc.obstacle to WinController.obstacle as SR8
+	connect EndStopDtc.endStop to WinController.endStop as SR9
+}

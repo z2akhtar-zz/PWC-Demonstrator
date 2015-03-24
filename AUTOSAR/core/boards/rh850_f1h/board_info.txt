@@ -1,0 +1,38 @@
+
+INFO
+  RH850/F1H-176 
+
+BOARD
+  - RH850/F1x-176pin, PiggyBack board 
+  - MainOsc: 8 or 16 Mhz external crystal.
+  - SubOsc: NOT MOUNTED
+
+DEVICE
+   R7F7015032AFP  
+   Freq:		 120 Mhz 
+   Code Flash:       6MB
+   CPU1: Local RAM:  192KB
+   CPU2: Local RAM:  192KB
+   Data Flash:       64KB
+   Global RAM:       64KB
+   RRAM:             128KB
+   
+   RBASE: 0x0000_0000 (CPU will read reset vector from address 0x0000_0000)
+   
+RAM: 
+   0xFEDD_0000 - 0xFEE0_7FFF    Some RAM
+   0xFEE0_8000 -                Reserved 
+    
+
+    0xFEDD_8000 - 0xFEE0_7FFF
+
+
+MEMORY MAP
+   
+   0x0000_0000 -> 0x0017_FFFF      Code Flash(bank A)
+   0x0080_0000 -> 0x0097_FFFF      Code Flash(bank B)
+   
+   0xFEDD_0000 - 0xFEE0_0000       Some RAM
+   
+   
+   

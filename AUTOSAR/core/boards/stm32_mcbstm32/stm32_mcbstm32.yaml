@@ -1,0 +1,9 @@
+# 1.0
+# com.arccore.board
+
+- !!com.arccore.corebuilder.templates.yaml.BoardSettings
+  label: stm32_mcbstm32
+  description: 
+  environment: {
+    BOARDDIR: stm32_mcbstm32
+  }

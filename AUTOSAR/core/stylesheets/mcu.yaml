@@ -1,0 +1,109 @@
+# 5.0.0
+# com.arccore.bsw.stylesheet
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuNumberOfMcuModes
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuRamSectors
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuMode
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuResetSetting
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuClockSettingId
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuPublishedInformation
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuResetReason
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuClockSrcFailureNotification 
+  mcals: [zynq] 
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: McuGetRamStateApi
+  mcals: [zynq] 
+
+- !!com.arccore.common.yaml.data.styles.DisabledContainer
+  name: McuDemEventParameterRefs
+  mcals: [zynq]
+  
+- !!com.arccore.common.yaml.data.styles.DisplayName
+  name: McuNoPll
+  display: Mcu No PLL
+
+- !!com.arccore.common.yaml.data.styles.DisplayName
+  name: Frequency
+  display: Frequency (Deprecated)
+  
+#########################################################
+# ParameterGroup
+#########################################################
+# zynq
+# An active clock is often CLKACT or CLKACT0 and CLKACT1 if many peripherals
+# Try to keep it as <reg>_<field>
+# e.g GEM0_DIVISOR1, GEM0_DIVISOR, GEM0_CLKACT
+ 
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Can Clocks
+  members: [ CAN_DIVISOR, CAN_DIVISOR1, CAN_CLKACT,  CAN_CLKACT1, CAN_MIOCLK_CTRL ] 
+  mcals: [zynq]
+  
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Eth0 Clocks
+  members: [ GEM0_DIVISOR, GEM0_DIVISOR1, GEM0_CLKACT, GEM0_RCLK_CTRL ]
+  mcals: [zynq]
+      
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Eth1 Clocks
+  members: [ GEM1_DIVISOR, GEM1_DIVISOR1, GEM1_CLKACT, GEM1_RCLK_CTRL ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Cpu
+  members: [ CPU_DIVISOR, CPU_1XCLKACT, CPU_2XCLKACT, CPU_3OR2XCLKACT, CPU_6OR4XCLKACT, CPU_PERI_CLKACT ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Uart
+  members: [ UART_DIVISOR, UART_CLKACT,  UART_CLKACT1 ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Sdio
+  members: [ SDIO_DIVISOR, SDIO_CLKACT, SDIO_CLKACT1 ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: Smc
+  members: [ SMC_DIVISOR, SMC_CLKACT ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: LQSPI
+  members: [ LQSPI_DIVISOR, LQSPI_CLKACT ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: SPI
+  members: [ SPI_DIVISOR, SPI_CLKACT, SPI_CLKACT1  ]
+  mcals: [zynq]
+
+- !!com.arccore.common.yaml.data.styles.ParameterGroup
+  name: PCAP
+  members: [ PCAP_DIVISOR, PCAP_CLKACT ]
+  mcals: [zynq]
+
+#########################################################
+# Excluded from generic validation
+#########################################################   
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: Frequency 
+  

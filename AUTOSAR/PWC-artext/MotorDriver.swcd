@@ -1,0 +1,31 @@
+package PWC.SensorsActuators.MotorDriver
+
+import PWC.Types.*
+import PWC.Services.IoHwAb.*
+import ArcCore.Services.IoHwAb.*
+import PWC.SensorsActuators.MotorDriver.*
+
+component application MotorDriverType
+{
+	ports {
+		receiver cmd requires BasicCommand
+		client RunMotor_1 requires DigitalServiceWrite
+		client RunMotor_2 requires DigitalServiceWrite
+	}
+}
+
+internalBehavior MotorDriverBehavior for MotorDriverType {
+	
+	runnable MotorDriverRunnable [0.0] {
+		symbol "MotorDriverRunnable"
+		dataReadAccess cmd.command
+		serverCallPoint synchronous RunMotor_1.Write
+		serverCallPoint synchronous RunMotor_2.Write
+		timingEvent 0.1 as StepMotor
+	}
+}
+
+implementation MotorDriverImpl for MotorDriverType.MotorDriverBehavior {
+	language c
+	codeDescriptor "src"
+}

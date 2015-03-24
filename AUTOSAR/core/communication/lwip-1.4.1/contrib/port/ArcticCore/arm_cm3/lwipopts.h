@@ -1,0 +1,9 @@
+#define LWIP_AR_MAJOR_VERSION   1
+#define LWIP_AR_MINOR_VERSION   0
+#define LWIP_AR_PATCH_VERSION   0
+
+#define LWIP_SW_MAJOR_VERSION   1
+#define LWIP_SW_MINOR_VERSION   0
+#define LWIP_SW_PATCH_VERSION   0
+
+#include "LwIp_Cfg.h"

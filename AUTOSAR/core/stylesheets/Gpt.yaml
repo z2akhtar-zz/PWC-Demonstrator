@@ -1,0 +1,40 @@
+# 5.0.0
+# com.arccore.bsw.stylesheet
+
+# Container GptClockReferencePoint
+- !!com.arccore.common.yaml.data.styles.DisabledContainer
+  name: GptClockReferencePoint
+  mcals: [ RH850F1H]
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptClockReference
+  mcals: [ MPC560x, MPC551x,  MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, MPC5606B, MPC5607B, zynq, RH850F1H, MPC5777M]
+
+# Container GptChannelConfiguration  
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptChannelId
+  mcals: [ MPC560x, MPC551x,  MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, MPC5606B, MPC5607B, zynq, RH850F1H, MPC5777M]
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptChannelTickFrequency
+  mcals: [ MPC560x, MPC551x,  MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, MPC5606B, MPC5607B, zynq, RH850F1H, MPC5777M]
+    
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptChannelTickValueMax
+  
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptChannelClkSrcRef
+  mcals: [ MPC560x, MPC551x,  MPC5744P, MPC5634M,MPC5643L, SPC56XL70, MPC5644A, MPC5645S, MPC5606B, MPC5607B, zynq, RH850F1H, MPC5777M]
+
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptPredefTimer100us32bitEnable
+ 
+- !!com.arccore.common.yaml.data.styles.HiddenParameter
+  name: GptPredefTimer1usEnablingGrade
+
+#######################################################  
+#Parameters excluded from generic validation
+#######################################################
+- !!com.arccore.common.yaml.data.styles.ExcludedFromGenericValidation
+  name: GptWakeupSourceRef
+  mcals: [ MPC560x, MPC5744P, MPC5634M, MPC5643L, SPC56XL70, MPC5644A, MPC5645S, MPC5606B, MPC5607B, zynq, RH850F1H, MPC5777M]  

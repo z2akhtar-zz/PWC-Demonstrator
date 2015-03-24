@@ -1,0 +1,32 @@
+Using built-in specs.
+COLLECT_GCC=D:\Research\PWC\ArcCore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: ../gcc-4.8.2/configure --build=x86_64-linux-gnu --host=i586-mingw32msvc --target=arm-none-eabi --prefix=/home/mahi/gcc_install_arm/i586-mingw32msvc/arm-none-eabi --disable-shared --disable-nls --disable-threads --disable-libssp --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp -v --enable-languages=c --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --with-newlib --with-headers=../newlib-1.20.0/newlib/libc/include --with-mpc=/home/mahi/gcc_install_arm/i586-mingw32msvc/gcc_support_libs --with-mpfr=/home/mahi/gcc_install_arm/i586-mingw32msvc/gcc_support_libs --with-gmp=/home/mahi/gcc_install_arm/i586-mingw32msvc/gcc_support_libs -v
+Thread model: single
+gcc version 4.8.2 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-c'
+ d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/4.8.2/cc1.exe -quiet -v -iprefix d:\research\pwc\arccore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\../lib/gcc/arm-none-eabi/4.8.2/ -D__USES_INITFINI__ gcc_path_probe.c -quiet -dumpbase gcc_path_probe.c -auxbase gcc_path_probe -version -o C:\Users\z2akhtar\AppData\Local\Temp\ccGJtzOC.s
+GNU C (GCC) version 4.8.2 (arm-none-eabi)
+	compiled by GNU C version 4.2.1-sjlj (mingw32-2), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/4.8.2/include"
+ignoring duplicate directory "d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/4.8.2/include-fixed"
+ignoring duplicate directory "d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/sys-include"
+ignoring duplicate directory "d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ d:\research\pwc\arccore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\../lib/gcc/arm-none-eabi/4.8.2/include
+ d:\research\pwc\arccore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\../lib/gcc/arm-none-eabi/4.8.2/include-fixed
+ d:\research\pwc\arccore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/sys-include
+ d:\research\pwc\arccore\com.arccore.a4.arm.bundle-win32.win32.x86_64\msys\opt\arm-none-eabi\bin\../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/include
+End of search list.
+GNU C (GCC) version 4.8.2 (arm-none-eabi)
+	compiled by GNU C version 4.2.1-sjlj (mingw32-2), GMP version 5.0.4, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2d5c30769b0b58a9720f2809c1be0e06
+COLLECT_GCC_OPTIONS='-v' '-c'
+ d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/bin/as.exe -v -meabi=5 -o gcc_path_probe.o C:\Users\z2akhtar\AppData\Local\Temp\ccGJtzOC.s
+GNU assembler version 2.24 (arm-none-eabi) using BFD version (GNU Binutils) 2.24
+COMPILER_PATH=d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/4.8.2/;d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../libexec/gcc/;d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.8.2/;d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../lib/gcc/;d:/research/pwc/arccore/com.arccore.a4.arm.bundle-win32.win32.x86_64/msys/opt/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.8.2/../../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-c'

@@ -1,0 +1,4089 @@
+Model {
+  Name			  "verification"
+  Version		  8.0
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    3
+    Inport {
+      BusObject		      ""
+      Name		      "req"
+    }
+    Inport {
+      BusObject		      ""
+      Name		      "endStop"
+    }
+    Inport {
+      BusObject		      ""
+      Name		      "obstacle"
+    }
+    NumRootOutports	    1
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "cmd"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.330"
+    NumModelReferences	    1
+    ModelReference {
+      ModelRefBlockPath	      "verification/Model|power_window_controller"
+    }
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1382.0, 744.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "86"
+	  Extents		  [1135.0, 595.0]
+	  ZoomFactor		  [1.5079787234042554]
+	  Offset		  [224.668430335097, 193.71604938271608]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1135.0, 595.0]
+	  ZoomFactor		  [0.865648854961832]
+	  Offset		  [-317.82760141093479, 44.827160493827165]
+	}
+	PropName		"EditorsInfo"
+      }
+    }
+  }
+  Created		  "Mon Dec 08 13:07:28 2014"
+  Creator		  "z2akhtar"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "z2akhtar"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Dec 31 19:38:37 2014"
+  RTWModifiedTimeStamp	  341931847
+  ModelVersionFormat	  "1.%<AutoIncrement:330>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  off
+  ShowSignalResolutionIcons off
+  ShowViewerIcons	  off
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "verification"
+    overrideMode_	    [0U]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "verification"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.12.1"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.12.1"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.1"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.12.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.12.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.12.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.12.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.12.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.12.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.12.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.12.1"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Classic"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.12.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	Sldv.ConfigComp {
+	  $ObjectID		  19
+	  Version		  "1.12.1"
+	  Description		  "Design Verifier Custom Configuration Component"
+	  Name			  "Design Verifier"
+	  DVMode		  "PropertyProving"
+	  DVMaxProcessTime	  1800
+	  DVDisplayUnsatisfiableObjectives off
+	  DVAutomaticStubbing	  on
+	  DVDesignMinMaxConstraints on
+	  DVOutputDir		  "sldv_output/$ModelName$"
+	  DVMakeOutputFilesUnique on
+	  DVBlockReplacement	  off
+	  DVBlockReplacementRulesList "<FactoryDefaultRules>"
+	  DVBlockReplacementModelFileName "$ModelName$_replacement"
+	  DVParameters		  off
+	  DVParametersConfigFileName "sldv_params_template.m"
+	  DVModelCoverageObjectives "ConditionDecision"
+	  DVTestConditions	  "UseLocalSettings"
+	  DVTestObjectives	  "UseLocalSettings"
+	  DVMaxTestCaseSteps	  500
+	  DVTestSuiteOptimization "CombinedObjectives (Nonlinear Extended)"
+	  DVAssertions		  "UseLocalSettings"
+	  DVProofAssumptions	  "UseLocalSettings"
+	  DVExtendExistingTests	  off
+	  DVIgnoreExistTestSatisfied on
+	  DVIgnoreCovSatisfied	  off
+	  DVCovFilter		  off
+	  DVDetectIntegerOverflow on
+	  DVDetectDivisionByZero  on
+	  DVDesignMinMaxCheck	  off
+	  DVDetectDeadLogic	  off
+	  DVDetectSFTransConflict on
+	  DVDetectSFStateInconsistency on
+	  DVDetectSFArrayOutOfBounds on
+	  DVDetectEMLArrayOutOfBounds on
+	  DVDetectSLSelectorOutOfBounds	on
+	  DVDetectSLMPSwitchOutOfBounds	on
+	  DVDetectSLInvalidCast	  on
+	  DVDetectSLMergeConflict on
+	  DVDetectSLUninitializedDSR on
+	  DVProvingStrategy	  "ProveWithViolationDetection"
+	  DVMaxViolationSteps	  10
+	  DVSaveDataFile	  on
+	  DVDataFileName	  "$ModelName$_sldvdata"
+	  DVSaveExpectedOutput	  off
+	  DVRandomizeNoEffectData off
+	  DVSaveHarnessModel	  off
+	  DVHarnessModelFileName  "$ModelName$_harness"
+	  DVModelReferenceHarness off
+	  DVSaveSystemTestHarness off
+	  DVSystemTestFileName	  "$ModelName$_harness"
+	  DVSaveReport		  off
+	  DVReportFileName	  "$ModelName$_report"
+	  DVReportIncludeGraphics off
+	  DVDisplayReport	  on
+	  DVDisplayResultsOnModel off
+	  DVActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 243, 68, 1123, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    20
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Delay
+      DelayLengthSource	      "Dialog"
+      DelayLength	      "2"
+      DelayLengthUpperLimit   "100"
+      InitialConditionSource  "Dialog"
+      InitialCondition	      "0.0"
+      ExternalReset	      "None"
+      PreventDirectFeedthrough off
+      DiagnosticForOutOfRangeDelayLength "None"
+      RemoveProtectionDelayLength off
+      InputProcessing	      "Elements as channels (sample based)"
+      UseCircularBuffer	      off
+      SampleTime	      "-1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ModelReference
+      SimulationMode	      "Accelerator"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      CopyOfModelProtected    off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "verification"
+    Location		    [-8, -8, 1374, 736]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "86"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "89"
+    Block {
+      BlockType		      Inport
+      Name		      "req"
+      SID		      "11"
+      Position		      [20, 63, 50, 77]
+      ZOrder		      135
+      ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "double"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "endStop"
+      SID		      "12"
+      Position		      [20, 98, 50, 112]
+      ZOrder		      119
+      ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "obstacle"
+      SID		      "13"
+      Position		      [20, 133, 50, 147]
+      ZOrder		      120
+      Port		      "3"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      SID		      "62"
+      Position		      [20, 265, 95, 285]
+      ZOrder		      164
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From10"
+      SID		      "70"
+      Position		      [390, 215, 465, 235]
+      ZOrder		      172
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From12"
+      SID		      "72"
+      Position		      [20, 400, 95, 420]
+      ZOrder		      175
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From13"
+      SID		      "73"
+      Position		      [20, 425, 95, 445]
+      ZOrder		      176
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From14"
+      SID		      "74"
+      Position		      [20, 375, 95, 395]
+      ZOrder		      174
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From15"
+      SID		      "78"
+      Position		      [390, 320, 465, 340]
+      ZOrder		      181
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From16"
+      SID		      "79"
+      Position		      [390, 290, 465, 310]
+      ZOrder		      182
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From17"
+      SID		      "84"
+      Position		      [390, 420, 465, 440]
+      ZOrder		      187
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From18"
+      SID		      "81"
+      Position		      [20, 350, 95, 370]
+      ZOrder		      183
+      ShowName		      off
+      GotoTag		      "Obstacle"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From19"
+      SID		      "85"
+      Position		      [390, 390, 465, 410]
+      ZOrder		      188
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From2"
+      SID		      "63"
+      Position		      [390, 110, 465, 130]
+      ZOrder		      165
+      ShowName		      off
+      GotoTag		      "Obstacle"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From20"
+      SID		      "23"
+      Position		      [20, 515, 95, 535]
+      ZOrder		      137
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      SID		      "65"
+      Position		      [390, 85, 465, 105]
+      ZOrder		      167
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From4"
+      SID		      "66"
+      Position		      [20, 190, 95, 210]
+      ZOrder		      168
+      ShowName		      off
+      GotoTag		      "Obstacle"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From5"
+      SID		      "67"
+      Position		      [20, 215, 95, 235]
+      ZOrder		      169
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      "25"
+      Position		      [20, 585, 95, 605]
+      ZOrder		      126
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From7"
+      SID		      "68"
+      Position		      [20, 240, 95, 260]
+      ZOrder		      170
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From8"
+      SID		      "26"
+      Position		      [20, 655, 95, 675]
+      ZOrder		      127
+      ShowName		      off
+      GotoTag		      "Obstacle"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From9"
+      SID		      "69"
+      Position		      [390, 185, 465, 205]
+      ZOrder		      171
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Global Assumptions"
+      SID		      "27"
+      Tag		      "VerificationSubsystem"
+      Ports		      [2]
+      Position		      [535, 80, 660, 135]
+      ZOrder		      122
+      LibraryVersion	      "1.46"
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		21
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"Global Assumptions"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"201"
+	SIDHighWatermark	"380"
+	SIDPrevWatermark	"359"
+	Block {
+	  BlockType		  Inport
+	  Name			  "endStop"
+	  SID			  "27:373"
+	  Position		  [20, 263, 50, 277]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "obstacle"
+	  SID			  "27:374"
+	  Position		  [20, 303, 50, 317]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Assumption"
+	  SID			  "27:224"
+	  Ports			  [1]
+	  Position		  [270, 182, 295, 208]
+	  ZOrder		  -3
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Assumption"
+	  SourceType		  "Design Verifier Assumption"
+	  enabled		  on
+	  customAVTBlockType	  "Assumption"
+	  intervals		  "true"
+	  initial		  off
+	  dispValues		  on
+	  outEnabled		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Assumption1"
+	  SID			  "27:378"
+	  Ports			  [1]
+	  Position		  [270, 387, 295, 413]
+	  ZOrder		  241
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Assumption"
+	  SourceType		  "Design Verifier Assumption"
+	  enabled		  on
+	  customAVTBlockType	  "Assumption"
+	  intervals		  "{0,1,2,3,4}"
+	  initial		  off
+	  dispValues		  on
+	  outEnabled		  off
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From13"
+	  SID			  "27:379"
+	  Position		  [20, 391, 100, 409]
+	  ZOrder		  240
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "27:372"
+	  Position		  [20, 200, 90, 220]
+	  ZOrder		  1
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  "27:219"
+	  Position		  [20, 165, 90, 185]
+	  ZOrder		  -6
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "27:377"
+	  Position		  [225, 259, 305, 281]
+	  ZOrder		  127
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto4"
+	  SID			  "27:376"
+	  Position		  [225, 299, 305, 321]
+	  ZOrder		  126
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator8"
+	  SID			  "27:220"
+	  Ports			  [2, 1]
+	  Position		  [155, 155, 190, 230]
+	  ZOrder		  -9
+	  ShowName		  off
+	  Operator		  "NAND"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator8"
+	  SrcPort		  1
+	  DstBlock		  "Assumption"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "endStop"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "obstacle"
+	  SrcPort		  1
+	  DstBlock		  "Goto4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From13"
+	  SrcPort		  1
+	  DstBlock		  "Assumption1"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "27:362"
+	  Name			  "1. Obstacle and EndStop cannot be true at the same time"
+	  Position		  [147, 139]
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  SID			  "27:380"
+	  Name			  "2. Driver request can only be one of the following values "
+	  Position		  [152, 359]
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      SID		      "28"
+      Position		      [565, 549, 645, 571]
+      ZOrder		      125
+      ShowName		      off
+      GotoTag		      "Cmd"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto5"
+      SID		      "29"
+      Position		      [205, 61, 290, 79]
+      ZOrder		      129
+      ShowName		      off
+      GotoTag		      "Driver"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto7"
+      SID		      "31"
+      Position		      [205, 96, 290, 114]
+      ZOrder		      130
+      ShowName		      off
+      GotoTag		      "EndStop"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto8"
+      SID		      "32"
+      Position		      [205, 131, 290, 149]
+      ZOrder		      131
+      ShowName		      off
+      GotoTag		      "Obstacle"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Liveness"
+      SID		      "43"
+      Tag		      "VerificationSubsystem"
+      Ports		      [4]
+      Position		      [165, 184, 290, 291]
+      ZOrder		      143
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		22
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"Liveness"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"95"
+	SIDHighWatermark	"115"
+	Block {
+	  BlockType		  Inport
+	  Name			  "obstacle"
+	  SID			  "43:82"
+	  Position		  [955, 558, 985, 572]
+	  ZOrder		  206
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "cmd"
+	  SID			  "43:49"
+	  Position		  [955, 593, 985, 607]
+	  ZOrder		  228
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "endStop"
+	  SID			  "43:81"
+	  Position		  [955, 523, 985, 537]
+	  ZOrder		  205
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver"
+	  SID			  "43:80"
+	  Position		  [955, 488, 985, 502]
+	  ZOrder		  210
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "43:3"
+	  Position		  [140, 725, 170, 755]
+	  ZOrder		  125
+	  ShowName		  off
+	  Value			  "4"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "43:50"
+	  Position		  [615, 625, 645, 655]
+	  ZOrder		  173
+	  ShowName		  off
+	  Value			  "2"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  "43:87"
+	  Position		  [140, 630, 170, 660]
+	  ZOrder		  213
+	  ShowName		  off
+	  Value			  "3"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  SID			  "43:91"
+	  Position		  [615, 725, 645, 755]
+	  ZOrder		  217
+	  ShowName		  off
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector"
+	  SID			  "43:62"
+	  Ports			  [1, 1]
+	  Position		  [305, 359, 385, 411]
+	  ZOrder		  184
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Delayed Fixed Duration"
+	  in_hold		  "3"
+	  delay			  "0"
+	  out_hold		  "2"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector1"
+	  SID			  "43:75"
+	  Ports			  [1, 1]
+	  Position		  [305, 429, 385, 481]
+	  ZOrder		  200
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Delayed Fixed Duration"
+	  in_hold		  "4"
+	  delay			  "0"
+	  out_hold		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Extender"
+	  SID			  "43:39"
+	  Ports			  [2, 1]
+	  Position		  [585, 491, 665, 544]
+	  ZOrder		  185
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Extender"
+	  SourceType		  "Extender"
+	  reset			  on
+	  ext_type		  "Infinite"
+	  out_hold		  "3"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "43:95"
+	  Position		  [955, 746, 1035, 764]
+	  ZOrder		  220
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From10"
+	  SID			  "43:107"
+	  Position		  [85, 446, 165, 464]
+	  ZOrder		  233
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From12"
+	  SID			  "43:109"
+	  Position		  [85, 521, 165, 539]
+	  ZOrder		  236
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From14"
+	  SID			  "43:115"
+	  Position		  [955, 796, 1035, 814]
+	  ZOrder		  242
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From16"
+	  SID			  "43:5"
+	  Position		  [85, 376, 165, 394]
+	  ZOrder		  120
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "43:86"
+	  Position		  [90, 776, 170, 794]
+	  ZOrder		  211
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  "43:88"
+	  Position		  [90, 681, 170, 699]
+	  ZOrder		  215
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From4"
+	  SID			  "43:92"
+	  Position		  [565, 776, 645, 794]
+	  ZOrder		  219
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From5"
+	  SID			  "43:96"
+	  Position		  [955, 771, 1035, 789]
+	  ZOrder		  241
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From6"
+	  SID			  "43:97"
+	  Position		  [955, 721, 1035, 739]
+	  ZOrder		  222
+	  ShowName		  off
+	  GotoTag		  "ExDown"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From7"
+	  SID			  "43:98"
+	  Position		  [955, 696, 1035, 714]
+	  ZOrder		  223
+	  ShowName		  off
+	  GotoTag		  "Down"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From8"
+	  SID			  "43:111"
+	  Position		  [85, 561, 165, 579]
+	  ZOrder		  237
+	  ShowName		  off
+	  GotoTag		  "UpCmd"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From9"
+	  SID			  "43:105"
+	  Position		  [565, 676, 645, 694]
+	  ZOrder		  231
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "43:77"
+	  Position		  [1160, 747, 1245, 763]
+	  ZOrder		  202
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto10"
+	  SID			  "43:8"
+	  Position		  [345, 772, 430, 788]
+	  ZOrder		  126
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "43:52"
+	  Position		  [820, 671, 905, 689]
+	  ZOrder		  174
+	  ShowName		  off
+	  GotoTag		  "UpCmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  "43:89"
+	  Position		  [345, 677, 430, 693]
+	  ZOrder		  214
+	  ShowName		  off
+	  GotoTag		  "ExDown"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto5"
+	  SID			  "43:83"
+	  Position		  [1160, 486, 1245, 504]
+	  ZOrder		  207
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto6"
+	  SID			  "43:93"
+	  Position		  [820, 772, 905, 788]
+	  ZOrder		  218
+	  ShowName		  off
+	  GotoTag		  "Down"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto7"
+	  SID			  "43:84"
+	  Position		  [1160, 521, 1245, 539]
+	  ZOrder		  208
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto8"
+	  SID			  "43:85"
+	  Position		  [1160, 556, 1245, 574]
+	  ZOrder		  209
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  "43:103"
+	  Position		  [1160, 591, 1245, 609]
+	  ZOrder		  229
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Implies"
+	  SID			  "43:9"
+	  Ports			  [2, 1]
+	  Position		  [740, 516, 820, 569]
+	  ZOrder		  122
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Verification Utilities/Implies"
+	  SourceType		  "Design Verifier Implies"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator"
+	  SID			  "43:74"
+	  Ports			  [5, 1]
+	  Position		  [1090, 696, 1120, 814]
+	  ZOrder		  199
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "5"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator1"
+	  SID			  "43:76"
+	  Ports			  [1, 1]
+	  Position		  [220, 439, 250, 471]
+	  ZOrder		  201
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator2"
+	  SID			  "43:106"
+	  Ports			  [2, 1]
+	  Position		  [485, 369, 515, 471]
+	  ZOrder		  232
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Proof Objective"
+	  SID			  "43:10"
+	  Ports			  [1]
+	  Position		  [875, 532, 900, 558]
+	  ZOrder		  121
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Proof Objective"
+	  SourceType		  "Design Verifier Proof Objective"
+	  enabled		  on
+	  customAVTBlockType	  "Proof Objective"
+	  intervals		  "true"
+	  dispValues		  on
+	  outEnabled		  off
+	  enableStopSim		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator2"
+	  SID			  "43:11"
+	  Ports			  [2, 1]
+	  Position		  [255, 762, 285, 793]
+	  ZOrder		  124
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator3"
+	  SID			  "43:53"
+	  Ports			  [2, 1]
+	  Position		  [730, 662, 760, 693]
+	  ZOrder		  172
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator4"
+	  SID			  "43:90"
+	  Ports			  [2, 1]
+	  Position		  [255, 667, 285, 698]
+	  ZOrder		  212
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator5"
+	  SID			  "43:94"
+	  Ports			  [2, 1]
+	  Position		  [730, 762, 760, 793]
+	  ZOrder		  216
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Implies"
+	  SrcPort		  1
+	  DstBlock		  "Proof Objective"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator2"
+	  SrcPort		  1
+	  DstBlock		  "Goto10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From16"
+	  SrcPort		  1
+	  DstBlock		  "Detector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From9"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "driver"
+	  SrcPort		  1
+	  DstBlock		  "Goto5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "endStop"
+	  SrcPort		  1
+	  DstBlock		  "Goto7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "obstacle"
+	  SrcPort		  1
+	  DstBlock		  "Goto8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator4"
+	  SrcPort		  1
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From4"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator5"
+	  SrcPort		  1
+	  DstBlock		  "Goto6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From7"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From6"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From5"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "cmd"
+	  SrcPort		  1
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From10"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator2"
+	  SrcPort		  1
+	  Points		  [42, 0; 0, 85]
+	  DstBlock		  "Extender"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From12"
+	  SrcPort		  1
+	  DstBlock		  "Extender"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From8"
+	  SrcPort		  1
+	  Points		  [515, 0; 0, -15]
+	  DstBlock		  "Implies"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Extender"
+	  SrcPort		  1
+	  Points		  [17, 0; 0, 10]
+	  DstBlock		  "Implies"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 10]
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator1"
+	  SrcPort		  1
+	  DstBlock		  "Detector1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -10]
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From14"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  5
+	}
+	Annotation {
+	  SID			  "43:12"
+	  Name			  "Liveness:\nIf expressUp is requested, up command should be issued until window is fully closed (unless th"
+	  "ere is an obstacle and user is not overriding)"
+	  Position		  [87, 288]
+	  HorizontalAlignment	  "left"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      ModelReference
+      Name		      "Model"
+      SID		      "33"
+      Ports		      [3, 1]
+      Position		      [270, 491, 415, 699]
+      ZOrder		      133
+      ModelNameDialog	      "power_window_controller"
+      SimulationMode	      "Normal"
+      ModelReferenceVersion   "1.36"
+      List {
+	ListType		InputPortNames
+	port0			"req"
+	port1			"endStop"
+	port2			"obstacle"
+      }
+      List {
+	ListType		OutputPortNames
+	port0			"cmd"
+      }
+      List {
+	ListType		OutputPortOutputBusAsStructs
+	port0			"off"
+      }
+      List {
+	ListType		InputPortLatchByCopyingInsideSignal
+	port0			"off"
+	port1			"off"
+	port2			"off"
+      }
+      CopyOfModelName	      "power_window_controller"
+      DefaultDataLogging      on
+      List {
+	ListType		InputPortLatchByDelayingOutsideSignal
+	port0			"off"
+	port1			"off"
+	port2			"off"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Motor Safety"
+      SID		      "36"
+      Tag		      "VerificationSubsystem"
+      Ports		      [2]
+      Position		      [535, 182, 660, 238]
+      ZOrder		      138
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		23
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"Motor Safety"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"173"
+	SIDHighWatermark	"36"
+	Block {
+	  BlockType		  Inport
+	  Name			  "endStop"
+	  SID			  "36:24"
+	  Position		  [505, 483, 535, 497]
+	  ZOrder		  145
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "cmd"
+	  SID			  "36:25"
+	  Position		  [505, 693, 535, 707]
+	  ZOrder		  175
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "36:26"
+	  Position		  [505, 640, 535, 670]
+	  ZOrder		  177
+	  ShowName		  off
+	  Value			  "0"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Delay
+	  Name			  "Delay1"
+	  SID			  "36:20"
+	  Ports			  [1, 1]
+	  Position		  [645, 563, 680, 597]
+	  ZOrder		  136
+	  ShowName		  off
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	}
+	Block {
+	  BlockType		  Delay
+	  Name			  "Delay2"
+	  SID			  "36:35"
+	  Ports			  [1, 1]
+	  Position		  [645, 473, 680, 507]
+	  ZOrder		  186
+	  ShowName		  off
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  "36:7"
+	  Position		  [505, 571, 585, 589]
+	  ZOrder		  127
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "36:27"
+	  Position		  [715, 686, 800, 704]
+	  ZOrder		  178
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Implies"
+	  SID			  "36:9"
+	  Ports			  [2, 1]
+	  Position		  [910, 508, 985, 552]
+	  ZOrder		  122
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Verification Utilities/Implies"
+	  SourceType		  "Design Verifier Implies"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator1"
+	  SID			  "36:21"
+	  Ports			  [2, 1]
+	  Position		  [750, 557, 780, 588]
+	  ZOrder		  135
+	  ShowName		  off
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator2"
+	  SID			  "36:36"
+	  Ports			  [2, 1]
+	  Position		  [750, 467, 780, 498]
+	  ZOrder		  185
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Proof Objective"
+	  SID			  "36:10"
+	  Ports			  [1]
+	  Position		  [1030, 517, 1055, 543]
+	  ZOrder		  121
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Proof Objective"
+	  SourceType		  "Design Verifier Proof Objective"
+	  enabled		  on
+	  customAVTBlockType	  "Proof Objective"
+	  intervals		  "true"
+	  dispValues		  on
+	  outEnabled		  off
+	  enableStopSim		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator3"
+	  SID			  "36:28"
+	  Ports			  [2, 1]
+	  Position		  [620, 677, 650, 708]
+	  ZOrder		  176
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Implies"
+	  SrcPort		  1
+	  DstBlock		  "Proof Objective"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Delay1"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Delay1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -25; 100, 0; 0, 10]
+	    DstBlock		    "Logical Operator1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "cmd"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Delay2"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "endStop"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    DstBlock		    "Delay2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -25; 100, 0; 0, 10]
+	    DstBlock		    "Logical Operator2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Logical Operator2"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, 35]
+	  DstBlock		  "Implies"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator1"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, -35]
+	  DstBlock		  "Implies"
+	  DstPort		  2
+	}
+	Annotation {
+	  SID			  "36:12"
+	  Name			  "Motor Safety:\nAfter end of travel is detected, Stop within 2 time steps"
+	  Position		  [507, 413]
+	  HorizontalAlignment	  "left"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Predictability"
+      SID		      "86"
+      Tag		      "VerificationSubsystem"
+      Ports		      [2]
+      Position		      [535, 387, 660, 443]
+      ZOrder		      186
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		24
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"Predictability"
+	Location		[-8, -8, 1374, 736]
+	Open			on
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"150"
+	SIDHighWatermark	"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver"
+	  SID			  "86:76"
+	  Position		  [640, 403, 670, 417]
+	  ZOrder		  262
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "cmd"
+	  SID			  "86:78"
+	  Position		  [640, 443, 670, 457]
+	  ZOrder		  276
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Assumption"
+	  SID			  "86:100"
+	  Ports			  [1, 1]
+	  Position		  [750, 397, 775, 423]
+	  ZOrder		  297
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Assumption"
+	  SourceType		  "Design Verifier Assumption"
+	  enabled		  on
+	  customAVTBlockType	  "Assumption"
+	  intervals		  "{0,1,2}"
+	  initial		  off
+	  dispValues		  on
+	  outEnabled		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "86:53"
+	  Position		  [275, 525, 305, 555]
+	  ZOrder		  202
+	  ShowName		  off
+	  Value			  "0"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "86:67"
+	  Position		  [640, 495, 670, 525]
+	  ZOrder		  217
+	  ShowName		  off
+	  Value			  "0"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "86:42"
+	  Position		  [275, 455, 305, 485]
+	  ZOrder		  196
+	  ShowName		  off
+	  Value			  "4"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  "86:85"
+	  Position		  [275, 405, 305, 435]
+	  ZOrder		  283
+	  ShowName		  off
+	  Value			  "3"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector"
+	  SID			  "86:56"
+	  Ports			  [1, 1]
+	  Position		  [435, 253, 515, 307]
+	  ZOrder		  205
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Synchronized"
+	  in_hold		  "3"
+	  delay			  "0"
+	  out_hold		  "5"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "86:82"
+	  Position		  [275, 271, 355, 289]
+	  ZOrder		  280
+	  ShowName		  off
+	  GotoTag		  "Neutral"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "86:80"
+	  Position		  [275, 496, 355, 514]
+	  ZOrder		  278
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  "86:45"
+	  Position		  [275, 351, 355, 369]
+	  ZOrder		  189
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  "86:81"
+	  Position		  [640, 546, 720, 564]
+	  ZOrder		  279
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "86:54"
+	  Position		  [485, 526, 570, 544]
+	  ZOrder		  203
+	  ShowName		  off
+	  GotoTag		  "Neutral"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "86:46"
+	  Position		  [485, 471, 570, 489]
+	  ZOrder		  197
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  "86:68"
+	  Position		  [850, 526, 935, 544]
+	  ZOrder		  218
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto4"
+	  SID			  "86:86"
+	  Position		  [485, 421, 570, 439]
+	  ZOrder		  284
+	  ShowName		  off
+	  GotoTag		  "ExDown"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto5"
+	  SID			  "86:77"
+	  Position		  [850, 401, 935, 419]
+	  ZOrder		  261
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  "86:79"
+	  Position		  [850, 441, 935, 459]
+	  ZOrder		  277
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Implies"
+	  SID			  "86:47"
+	  Ports			  [2, 1]
+	  Position		  [680, 298, 755, 342]
+	  ZOrder		  188
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Verification Utilities/Implies"
+	  SourceType		  "Design Verifier Implies"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Proof Objective"
+	  SID			  "86:50"
+	  Ports			  [1]
+	  Position		  [880, 307, 905, 333]
+	  ZOrder		  187
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Proof Objective"
+	  SourceType		  "Design Verifier Proof Objective"
+	  enabled		  on
+	  customAVTBlockType	  "Proof Objective"
+	  intervals		  "true"
+	  dispValues		  on
+	  outEnabled		  off
+	  enableStopSim		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator1"
+	  SID			  "86:52"
+	  Ports			  [2, 1]
+	  Position		  [410, 517, 440, 548]
+	  ZOrder		  201
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator2"
+	  SID			  "86:69"
+	  Ports			  [2, 1]
+	  Position		  [755, 517, 785, 548]
+	  ZOrder		  216
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator3"
+	  SID			  "86:51"
+	  Ports			  [2, 1]
+	  Position		  [410, 462, 440, 493]
+	  ZOrder		  195
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator4"
+	  SID			  "86:87"
+	  Ports			  [2, 1]
+	  Position		  [410, 412, 440, 443]
+	  ZOrder		  282
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Implies"
+	  SrcPort		  1
+	  DstBlock		  "Proof Objective"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, -20]
+	    Branch {
+	      Points		      [0, -50]
+	      DstBlock		      "Relational Operator4"
+	      DstPort		      2
+	    }
+	    Branch {
+	      DstBlock		      "Relational Operator3"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 20]
+	    DstBlock		    "Relational Operator1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Relational Operator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator1"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Detector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator2"
+	  SrcPort		  1
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "cmd"
+	  SrcPort		  1
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator4"
+	  SrcPort		  1
+	  DstBlock		  "Goto4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "driver"
+	  SrcPort		  1
+	  DstBlock		  "Assumption"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Assumption"
+	  SrcPort		  1
+	  DstBlock		  "Goto5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector"
+	  SrcPort		  1
+	  Points		  [77, 0; 0, 30]
+	  DstBlock		  "Implies"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, -15]
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [37, 0; 0, 15]
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  Points		  [157, 0; 0, -30]
+	  DstBlock		  "Implies"
+	  DstPort		  2
+	}
+	Annotation {
+	  SID			  "86:12"
+	  Name			  "Predictability:\nIf there is no request, there is no command unless there is a delayed action e.g. expres"
+	  "s "
+	  Position		  [267, 218]
+	  HorizontalAlignment	  "left"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Robustness"
+      SID		      "59"
+      Tag		      "VerificationSubsystem"
+      Ports		      [2]
+      Position		      [535, 287, 660, 343]
+      ZOrder		      161
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		25
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"Robustness"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"154"
+	SIDHighWatermark	"75"
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver"
+	  SID			  "59:39"
+	  Position		  [275, 463, 305, 477]
+	  ZOrder		  194
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "cmd"
+	  SID			  "59:66"
+	  Position		  [640, 503, 670, 517]
+	  ZOrder		  215
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "59:53"
+	  Position		  [275, 520, 305, 550]
+	  ZOrder		  202
+	  ShowName		  off
+	  Value			  "0"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "59:67"
+	  Position		  [640, 450, 670, 480]
+	  ZOrder		  217
+	  ShowName		  off
+	  Value			  "0"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "59:42"
+	  Position		  [275, 410, 305, 440]
+	  ZOrder		  196
+	  ShowName		  off
+	  Value			  "2"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector"
+	  SID			  "59:56"
+	  Ports			  [1, 1]
+	  Position		  [435, 259, 515, 311]
+	  ZOrder		  205
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Delayed Fixed Duration"
+	  in_hold		  "100"
+	  delay			  "0"
+	  out_hold		  "5"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "59:64"
+	  Position		  [275, 276, 355, 294]
+	  ZOrder		  213
+	  ShowName		  off
+	  GotoTag		  "DriverUp"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  "59:45"
+	  Position		  [275, 331, 355, 349]
+	  ZOrder		  189
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "59:54"
+	  Position		  [485, 496, 570, 514]
+	  ZOrder		  203
+	  ShowName		  off
+	  GotoTag		  "Neutral"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "59:46"
+	  Position		  [485, 456, 570, 474]
+	  ZOrder		  197
+	  ShowName		  off
+	  GotoTag		  "DriverUp"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  "59:68"
+	  Position		  [850, 496, 935, 514]
+	  ZOrder		  218
+	  ShowName		  off
+	  GotoTag		  "NoCmd"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Implies"
+	  SID			  "59:47"
+	  Ports			  [2, 1]
+	  Position		  [680, 288, 755, 337]
+	  ZOrder		  188
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Verification Utilities/Implies"
+	  SourceType		  "Design Verifier Implies"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Proof Objective"
+	  SID			  "59:50"
+	  Ports			  [1]
+	  Position		  [835, 302, 860, 328]
+	  ZOrder		  187
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Proof Objective"
+	  SourceType		  "Design Verifier Proof Objective"
+	  enabled		  on
+	  customAVTBlockType	  "Proof Objective"
+	  intervals		  "true"
+	  dispValues		  on
+	  outEnabled		  off
+	  enableStopSim		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator1"
+	  SID			  "59:52"
+	  Ports			  [2, 1]
+	  Position		  [375, 487, 405, 518]
+	  ZOrder		  201
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator2"
+	  SID			  "59:69"
+	  Ports			  [2, 1]
+	  Position		  [755, 487, 785, 518]
+	  ZOrder		  216
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator3"
+	  SID			  "59:51"
+	  Ports			  [2, 1]
+	  Position		  [375, 447, 405, 478]
+	  ZOrder		  195
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Implies"
+	  SrcPort		  1
+	  DstBlock		  "Proof Objective"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "driver"
+	  SrcPort		  1
+	  Points		  [29, 0]
+	  Branch {
+	    Points		    [0, 25]
+	    DstBlock		    "Relational Operator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Relational Operator3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Relational Operator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  Points		  [237, 0; 0, -15]
+	  DstBlock		  "Implies"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -25]
+	  DstBlock		  "Relational Operator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, 30]
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator1"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Detector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector"
+	  SrcPort		  1
+	  Points		  [77, 0; 0, 15]
+	  DstBlock		  "Implies"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "cmd"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator2"
+	  SrcPort		  1
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "59:12"
+	  Name			  "Robustness:\nIf the switch issues up or down request for more than 10 seconds (switch fault), stop the mo"
+	  "tor until the switch request is neutral again   "
+	  Position		  [267, 218]
+	  HorizontalAlignment	  "left"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "User Safety"
+      SID		      "46"
+      Tag		      "VerificationSubsystem"
+      Ports		      [4]
+      Position		      [165, 348, 290, 447]
+      ZOrder		      146
+      DisableCoverage	      on
+      CopyFcn		      "sldvsubsys('copy');"
+      LoadFcn		      "sldvsubsys('check')"
+      PreSaveFcn	      "set_param(gcb,'SimViewingDevice','on');\nsldvsubsys('check');                   "
+      OpenFcn		      "open_system(gcb,'force');"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      SimViewingDevice	      on
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		26
+	$ClassName		"Simulink.Mask"
+	Type			"VerificationSubsystem"
+	Help			"helpview(fullfile(docroot,'toolbox','sldv','sldv.map'),'verificationsubsystem')"
+	Initialization		"sldvsubsys('maskInit');"
+	SelfModifiable		"on"
+	Display			"image(imread('sldvicon_versubsys.png','BackGroundColor',[1 1 1]),'center');"
+	IconOpaque		"off"
+      }
+      System {
+	Name			"User Safety"
+	Location		[-8, -8, 1374, 736]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"87"
+	SIDHighWatermark	"86"
+	Block {
+	  BlockType		  Inport
+	  Name			  "obstacle"
+	  SID			  "46:35"
+	  Position		  [540, 808, 570, 822]
+	  ZOrder		  256
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "endStop"
+	  SID			  "46:37"
+	  Position		  [540, 773, 570, 787]
+	  ZOrder		  255
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "cmd"
+	  SID			  "46:36"
+	  Position		  [540, 843, 570, 857]
+	  ZOrder		  274
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "driver"
+	  SID			  "46:38"
+	  Position		  [540, 738, 570, 752]
+	  ZOrder		  260
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "46:40"
+	  Position		  [995, 980, 1025, 1010]
+	  ZOrder		  244
+	  ShowName		  off
+	  Value			  "4"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "46:41"
+	  Position		  [945, 700, 975, 730]
+	  ZOrder		  247
+	  ShowName		  off
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  "46:42"
+	  Position		  [995, 885, 1025, 915]
+	  ZOrder		  263
+	  ShowName		  off
+	  Value			  "3"
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  SID			  "46:43"
+	  Position		  [995, 790, 1025, 820]
+	  ZOrder		  267
+	  ShowName		  off
+	  SampleTime		  "Inf"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector"
+	  SID			  "46:44"
+	  Ports			  [1, 1]
+	  Position		  [770, 449, 850, 501]
+	  ZOrder		  249
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Delayed Fixed Duration"
+	  in_hold		  "3"
+	  delay			  "0"
+	  out_hold		  "2"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Detector2"
+	  SID			  "46:80"
+	  Ports			  [1, 1]
+	  Position		  [770, 549, 850, 601]
+	  ZOrder		  285
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Detector"
+	  SourceType		  "Detector"
+	  reset			  off
+	  typ			  "Delayed Fixed Duration"
+	  in_hold		  "4"
+	  delay			  "0"
+	  out_hold		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Extender"
+	  SID			  "46:46"
+	  Ports			  [2, 1]
+	  Position		  [1050, 596, 1130, 649]
+	  ZOrder		  250
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Temporal Operators/Extender"
+	  SourceType		  "Extender"
+	  reset			  on
+	  ext_type		  "Infinite"
+	  out_hold		  "3"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "46:86"
+	  Position		  [535, 566, 615, 584]
+	  ZOrder		  289
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From10"
+	  SID			  "46:48"
+	  Position		  [535, 516, 615, 534]
+	  ZOrder		  278
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From11"
+	  SID			  "46:49"
+	  Position		  [535, 626, 615, 644]
+	  ZOrder		  280
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From12"
+	  SID			  "46:50"
+	  Position		  [540, 981, 620, 999]
+	  ZOrder		  290
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From16"
+	  SID			  "46:52"
+	  Position		  [535, 466, 615, 484]
+	  ZOrder		  240
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "46:53"
+	  Position		  [945, 1031, 1025, 1049]
+	  ZOrder		  261
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  "46:54"
+	  Position		  [945, 936, 1025, 954]
+	  ZOrder		  265
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From4"
+	  SID			  "46:55"
+	  Position		  [945, 841, 1025, 859]
+	  ZOrder		  269
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From5"
+	  SID			  "46:56"
+	  Position		  [540, 956, 620, 974]
+	  ZOrder		  271
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From6"
+	  SID			  "46:57"
+	  Position		  [540, 931, 620, 949]
+	  ZOrder		  272
+	  ShowName		  off
+	  GotoTag		  "ExDown"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From7"
+	  SID			  "46:58"
+	  Position		  [540, 906, 620, 924]
+	  ZOrder		  273
+	  ShowName		  off
+	  GotoTag		  "Down"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From8"
+	  SID			  "46:59"
+	  Position		  [535, 666, 615, 684]
+	  ZOrder		  282
+	  ShowName		  off
+	  GotoTag		  "DownCmd"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From9"
+	  SID			  "46:60"
+	  Position		  [945, 751, 1025, 769]
+	  ZOrder		  276
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "46:61"
+	  Position		  [765, 947, 850, 963]
+	  ZOrder		  254
+	  ShowName		  off
+	  GotoTag		  "Halt"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto10"
+	  SID			  "46:62"
+	  Position		  [1200, 1027, 1285, 1043]
+	  ZOrder		  245
+	  ShowName		  off
+	  GotoTag		  "ExUp"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "46:63"
+	  Position		  [1200, 746, 1285, 764]
+	  ZOrder		  248
+	  ShowName		  off
+	  GotoTag		  "DownCmd"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  "46:64"
+	  Position		  [1200, 932, 1285, 948]
+	  ZOrder		  264
+	  ShowName		  off
+	  GotoTag		  "ExDown"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto5"
+	  SID			  "46:65"
+	  Position		  [765, 736, 850, 754]
+	  ZOrder		  257
+	  ShowName		  off
+	  GotoTag		  "Driver"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto6"
+	  SID			  "46:66"
+	  Position		  [1200, 837, 1285, 853]
+	  ZOrder		  268
+	  ShowName		  off
+	  GotoTag		  "Down"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto7"
+	  SID			  "46:67"
+	  Position		  [765, 771, 850, 789]
+	  ZOrder		  258
+	  ShowName		  off
+	  GotoTag		  "EndStop"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto8"
+	  SID			  "46:68"
+	  Position		  [765, 806, 850, 824]
+	  ZOrder		  259
+	  ShowName		  off
+	  GotoTag		  "Obstacle"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  "46:69"
+	  Position		  [765, 841, 850, 859]
+	  ZOrder		  275
+	  ShowName		  off
+	  GotoTag		  "Cmd"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Implies"
+	  SID			  "46:70"
+	  Ports			  [2, 1]
+	  Position		  [1205, 621, 1285, 674]
+	  ZOrder		  242
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Verification Utilities/Implies"
+	  SourceType		  "Design Verifier Implies"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator"
+	  SID			  "46:71"
+	  Ports			  [4, 1]
+	  Position		  [675, 899, 705, 1006]
+	  ZOrder		  251
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator1"
+	  SID			  "46:82"
+	  Ports			  [1, 1]
+	  Position		  [675, 559, 705, 591]
+	  ZOrder		  287
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical Operator2"
+	  SID			  "46:73"
+	  Ports			  [3, 1]
+	  Position		  [935, 449, 965, 601]
+	  ZOrder		  277
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Proof Objective"
+	  SID			  "46:75"
+	  Ports			  [1]
+	  Position		  [1340, 637, 1365, 663]
+	  ZOrder		  241
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  AttributesFormatString  "%<intervals>"
+	  LibraryVersion	  "1.144"
+	  SourceBlock		  "sldvlib/Objectives and Constraints/Proof Objective"
+	  SourceType		  "Design Verifier Proof Objective"
+	  enabled		  on
+	  customAVTBlockType	  "Proof Objective"
+	  intervals		  "true"
+	  dispValues		  on
+	  outEnabled		  off
+	  enableStopSim		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator2"
+	  SID			  "46:76"
+	  Ports			  [2, 1]
+	  Position		  [1110, 1017, 1140, 1048]
+	  ZOrder		  243
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator3"
+	  SID			  "46:77"
+	  Ports			  [2, 1]
+	  Position		  [1110, 737, 1140, 768]
+	  ZOrder		  246
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator4"
+	  SID			  "46:78"
+	  Ports			  [2, 1]
+	  Position		  [1110, 922, 1140, 953]
+	  ZOrder		  262
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational Operator5"
+	  SID			  "46:79"
+	  Ports			  [2, 1]
+	  Position		  [1110, 827, 1140, 858]
+	  ZOrder		  266
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Implies"
+	  SrcPort		  1
+	  DstBlock		  "Proof Objective"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator2"
+	  SrcPort		  1
+	  DstBlock		  "Goto10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From16"
+	  SrcPort		  1
+	  DstBlock		  "Detector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From9"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "driver"
+	  SrcPort		  1
+	  DstBlock		  "Goto5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "endStop"
+	  SrcPort		  1
+	  DstBlock		  "Goto7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "obstacle"
+	  SrcPort		  1
+	  DstBlock		  "Goto8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator4"
+	  SrcPort		  1
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From4"
+	  SrcPort		  1
+	  DstBlock		  "Relational Operator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 30]
+	  DstBlock		  "Relational Operator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational Operator5"
+	  SrcPort		  1
+	  DstBlock		  "Goto6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From7"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From6"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "cmd"
+	  SrcPort		  1
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical Operator2"
+	  SrcPort		  1
+	  Points		  [47, 0; 0, 85]
+	  DstBlock		  "Extender"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From11"
+	  SrcPort		  1
+	  DstBlock		  "Extender"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From8"
+	  SrcPort		  1
+	  Points		  [520, 0; 0, -15]
+	  DstBlock		  "Implies"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Extender"
+	  SrcPort		  1
+	  Points		  [17, 0; 0, 10]
+	  DstBlock		  "Implies"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector2"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From10"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical Operator1"
+	  SrcPort		  1
+	  DstBlock		  "Detector2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Detector"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From5"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From12"
+	  SrcPort		  1
+	  DstBlock		  "Logical Operator"
+	  DstPort		  4
+	}
+	Annotation {
+	  SID			  "46:12"
+	  Name			  "User Safety:\nIf obstacle is detected in express up (not overriden), then issue down command to Motor unt"
+	  "il endStop is reached"
+	  Position		  [532, 413]
+	  HorizontalAlignment	  "left"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "cmd"
+      SID		      "35"
+      Position		      [600, 588, 630, 602]
+      ZOrder		      121
+      IconDisplay	      "Port number"
+    }
+    Line {
+      SrcBlock		      "Model"
+      SrcPort		      1
+      Points		      [127, 0]
+      Branch {
+	Points			[0, -35]
+	DstBlock		"Goto4"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"cmd"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "req"
+      SrcPort		      1
+      DstBlock		      "Goto5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "endStop"
+      SrcPort		      1
+      DstBlock		      "Goto7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "obstacle"
+      SrcPort		      1
+      DstBlock		      "Goto8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From2"
+      SrcPort		      1
+      DstBlock		      "Global Assumptions"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From3"
+      SrcPort		      1
+      DstBlock		      "Global Assumptions"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From9"
+      SrcPort		      1
+      DstBlock		      "Motor Safety"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From10"
+      SrcPort		      1
+      DstBlock		      "Motor Safety"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From14"
+      SrcPort		      1
+      DstBlock		      "User Safety"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From12"
+      SrcPort		      1
+      DstBlock		      "User Safety"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From13"
+      SrcPort		      1
+      DstBlock		      "User Safety"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "From20"
+      SrcPort		      1
+      DstBlock		      "Model"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "Model"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From8"
+      SrcPort		      1
+      DstBlock		      "Model"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From15"
+      SrcPort		      1
+      DstBlock		      "Robustness"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From16"
+      SrcPort		      1
+      DstBlock		      "Robustness"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From18"
+      SrcPort		      1
+      DstBlock		      "User Safety"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From4"
+      SrcPort		      1
+      DstBlock		      "Liveness"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From5"
+      SrcPort		      1
+      DstBlock		      "Liveness"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From7"
+      SrcPort		      1
+      DstBlock		      "Liveness"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From1"
+      SrcPort		      1
+      DstBlock		      "Liveness"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "From17"
+      SrcPort		      1
+      DstBlock		      "Predictability"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From19"
+      SrcPort		      1
+      DstBlock		      "Predictability"
+      DstPort		      1
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2012b) dated Jul 26 2012, 22:31:44
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "verification"
+    created		    "08-Dec-2014 13:07:29"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    76014001.001
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

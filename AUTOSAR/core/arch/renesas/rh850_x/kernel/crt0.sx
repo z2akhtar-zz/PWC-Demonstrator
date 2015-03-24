@@ -1,0 +1,211 @@
+#define _ASSEMBLER_
+#include "asm_rh850.h"
+
+
+	.section ".reset","ax" //  text
+	ASM_BALIGN(512)	
+	jr	_start // RESET
+
+	ASM_BALIGN(16)
+	MOV32(1,r6)
+	jr	_Dummy // SYSERR
+
+	ASM_BALIGN(16)
+	MOV32(2,r6)
+	jr	_Dummy // HVTRAP
+
+	ASM_BALIGN(16)
+	MOV32(3,r6)
+	jr	_Dummy // FETRAP
+
+	ASM_BALIGN(16)
+	MOV32(4,r6)
+	jr	_Dummy_EI // TRAP0
+
+	ASM_BALIGN(16)
+	MOV32(5,r6)	
+	jr	_Dummy_EI // TRAP1
+
+	ASM_BALIGN(16)
+	MOV32(6,r6)	
+	jr	_Dummy // RIE
+
+	ASM_BALIGN(16)
+	MOV32(7,r6)
+	jr	_Dummy_EI // FPP/FPI
+
+	ASM_BALIGN(16)
+	MOV32(8,r6)
+	jr	_Dummy // UCPOP
+
+	ASM_BALIGN(16)
+	MOV32(8,r6)	
+	jr	_Dummy // MIP/MDP/ITLBE/DTLBE
+
+	ASM_BALIGN(16)
+	MOV32(9,r6)	
+	jr	_Dummy // PIE
+
+	ASM_BALIGN(16)
+	MOV32(10,r6)	
+	jr	_Dummy // Debug
+
+	ASM_BALIGN(16)
+	MOV32(11,r6)	
+	jr	_Dummy // MAE
+
+	ASM_BALIGN(16)
+	MOV32(12,r6)	
+	jr	_Dummy // (R.F.U)
+
+	ASM_BALIGN(16)
+	MOV32(13,r6)		
+	jr	_Dummy // FENMI
+
+	ASM_BALIGN(16)
+	MOV32(14,r6)			
+	jr	_Dummy // FEINT
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority0)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority1)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority2)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority3)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority4)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority5)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority6)
+
+	ASM_BALIGN(16)
+	jr	_Irq_Handler // INTn(priority7)
+
+#if 0
+	.section "EIINTTBL","a" 	//const
+	ASM_BALIGN(512)
+	.dw	#_Dummy_EI // INT0
+	.dw	#_Dummy_EI // INT1
+	.dw	#_Dummy_EI // INT2
+	.rept	288 - 3
+	.dw	#_Dummy_EI // INTn
+	.endm
+#endif
+
+
+    .extern __SP_INIT // gcc ?
+	.section ".text", "ax" // text
+	ASM_BALIGN(2)
+_Dummy:
+	br	_Dummy
+
+_Dummy_EI:
+	br	_Dummy_EI
+
+
+	.extern __SDA_BASE
+	.extern __SP_END
+	.extern __DATA_ROM
+	.extern rcw
+	.extern text
+	.extern exit
+	.extern main
+	.extern init
+	.extern ShutdownOS
+	
+.section .text	
+ASM_BALIGN(4)
+.globl	_start
+.type	_start,@function
+_start:
+    ASM_NEED(_exit)
+    
+    //Initialize gp, tp & sp.
+    /* GHS use predefined symbols _tp and _gp */ 
+    
+    MOV32(__SP_INIT-4,sp)
+    MOV32(__gp,gp)
+    MOV32(__ep,ep)
+    
+    mov -4,r1
+    and r1,sp
+    mov lp,r29
+       
+    mov 0,r20 // Initialize registers to a known value.
+    mov 0,r21
+    mov 0,r22
+    mov 0,r23
+    mov 0,r24
+    mov 0,r25
+    mov 0,r26
+    mov 0,r27
+    mov 0,r28 // Clear FP
+            
+    jarl init_ram, lp
+    
+    // Set CU0, coprocessor use permissions.
+    stsr    5, r6
+    mov 0x00030000, r11
+    or  r11,r6
+    ldsr r6, 5
+    
+    //Run init
+    jarl _init, lp
+    
+    //Go to main.
+    mov 1, r6 
+    jarl _main, lp
+    
+    jr _exit
+
+init_ram:
+    MOV32(__ram_start,ep)
+    MOV32(__ram_end,r13)
+    addi    -32, r13, r14
+    mov 0x0, r12
+
+ram_16loop:
+    sst.w   r12, 0x00[ep]
+    sst.w   r12, 0x04[ep]
+    sst.w   r12, 0x08[ep]
+    sst.w   r12, 0x0c[ep]
+    sst.w   r12, 0x10[ep]
+    sst.w   r12, 0x14[ep]
+    sst.w   r12, 0x18[ep]
+    sst.w   r12, 0x1c[ep]
+    addi    0x20, ep, ep
+        
+    cmp     r14, ep
+    ble ram_16loop
+
+    cmp r13, ep
+    
+ram_1loop:
+    be  return
+    sst.w   r12, 0x00[ep]
+    addi    0x4, ep, ep
+
+    cmp r13, ep
+    ble ram_1loop
+    
+    jr return
+
+return:
+    jmp [lp]
+
+    .globl  _exit
+_exit:
+#if defined(KERNEL)
+    mov 30, r6
+    jr ShutdownOS
+#endif
+    jr _exit

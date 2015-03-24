@@ -1,0 +1,32 @@
+package PWC.Types
+
+import PWC.*
+import ArcCore.Platform.ImplementationDataTypes.*
+
+enum impl requestType {	
+						request_neutral = 0 , 
+						request_basic_down = 1, 
+						request_basic_up = 2, 
+						request_express_down = 3, 
+						request_express_up = 4 
+}
+
+enum impl commandType {	
+						command_neutral = 0, 
+						command_down = 1, 
+						command_up = 2	
+}
+
+boolean impl myBoolean
+
+interface senderReceiver BasicCommand {
+	data commandType command
+}
+
+interface senderReceiver BasicRequest {
+	data requestType request
+}
+
+interface senderReceiver BasicIndicator {
+	data myBoolean isPresent
+}

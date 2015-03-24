@@ -1,0 +1,27 @@
+package PWC.Components.WinArbitrator
+
+import PWC.Types.*
+import PWC.Components.WinArbitrator.*
+
+component application WinArbitratorType {
+	ports {
+		receiver req_d requires BasicRequest
+		receiver req_p requires BasicRequest
+		sender req_a provides BasicRequest
+	}
+}
+
+internalBehavior WinArbitratorBehavior for WinArbitratorType {
+	runnable WinArbitratorRunnable [0.0] {
+		symbol "WinArbitratorRunnable"
+		dataWriteAccess req_a.request
+		dataReadAccess req_d.request
+		dataReadAccess req_p.request
+		timingEvent 0.1 as StepArbitrator
+	}
+}
+
+implementation WinArbitratorImpl for WinArbitratorType.WinArbitratorBehavior {
+	language c
+	codeDescriptor "src"
+}

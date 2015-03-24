@@ -1,0 +1,3234 @@
+# 1.0
+# com.arccore.bsw.port.pin.TMS570
+#
+#
+
+# This port definition try to manage both 144-pin PGE package and 337 ZWT package.
+# Pins that are not available on 144 package have fictional IDs starting with series:
+# 200 - 299 for GPIO
+# Pad names are strings for this CPU and cannot for this reason be represented in the ID.
+# For this reason the pad name is only seen in the description.
+
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[3]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[3]'
+  }
+  properties: {
+    PortPinId: 3,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'I2C_SCL',
+    group: 'MAGIC',
+    name: 'I2C_SCL'
+  }
+  properties: {
+    PortPinId: 3,
+    ArcPortPadId: A5,
+    __shortName: 'I2C_SCL',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[29]',
+    group: 'NHET',
+    name: 'N2HET1[29]'
+  }
+  properties: {
+    PortPinId: 3,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[29]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'nTZ1',
+    group: 'MAGIC',
+    name: 'nTZ1'
+  }
+  properties: {
+    PortPinId: 3,
+    ArcPortPadId: A5,
+    __shortName: 'nTZ1',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[2]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[2]'
+  }
+  properties: {
+    PortPinId: 4,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'I2C_SDA',
+    group: 'MAGIC',
+    name: 'I2C_SDA'
+  }
+  properties: {
+    PortPinId: 4,
+    ArcPortPadId: A5,
+    __shortName: 'I2C_SDA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[27]',
+    group: 'NHET',
+    name: 'N2HET1[27]'
+  }
+  properties: {
+    PortPinId: 4,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[27]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'nTZ2',
+    group: 'MAGIC',
+    name: 'nTZ2'
+  }
+  properties: {
+    PortPinId: 4,
+    ArcPortPadId: A5,
+    __shortName: 'nTZ2',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[11]',
+    group: 'NHET',
+    name: 'N2HET1[11]'
+  }
+  properties: {
+    PortPinId: 6,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[11]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[4]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[4]'
+  }
+  properties: {
+    PortPinId: 6,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[4]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[18]',
+    group: 'NHET',
+    name: 'N2HET2[18]'
+  }
+  properties: {
+    PortPinId: 6,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[18]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM1SYNCO',
+    group: 'PWM',
+    name: 'ETPWM1SYNCO'
+  }
+  properties: {
+    PortPinId: 6,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM1SYNCO',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC5,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOA[2]',
+    group: 'GPIO',
+    name: 'GIOA[2]'
+  }
+  properties: {
+    PortPinId: 9,
+    ArcPortPadId: A5,
+    __shortName: 'GIOA[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[0]',
+    group: 'NHET',
+    name: 'N2HET2[0]'
+  }
+  properties: {
+    PortPinId: 9,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP2I',
+    group: 'MAGIC',
+    name: 'EQEP2I'
+  }
+  properties: {
+    PortPinId: 9,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP2I',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOA[3]',
+    group: 'GPIO',
+    name: 'GIOA[3]'
+  }
+  properties: {
+    PortPinId: 200,
+    ArcPortPadId: A5,
+    __shortName: 'GIOA[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[2]',
+    group: 'NHET',
+    name: 'N2HET2[2]'
+  }
+  properties: {
+    PortPinId: 201,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOA[5]',
+    group: 'GPIO',
+    name: 'GIOA[5]'
+  }
+  properties: {
+    PortPinId: 14,
+    ArcPortPadId: A5,
+    __shortName: 'GIOA[5]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EXTCLKIN',
+    group: 'MAGIC',
+    name: 'EXTCLKIN'
+  }
+  properties: {
+    PortPinId: 14,
+    ArcPortPadId: A5,
+    __shortName: 'EXTCLKIN',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM1A',
+    group: 'PWM',
+    name: 'ETPWM1A'
+  }
+  properties: {
+    PortPinId: 14,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM1A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOA[6]',
+    group: 'GPIO',
+    name: 'GIOA[6]'
+  }
+  properties: {
+    PortPinId: 16,
+    ArcPortPadId: A5,
+    __shortName: 'GIOA[6]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[4]',
+    group: 'NHET',
+    name: 'N2HET2[4]'
+  }
+  properties: {
+    PortPinId: 16,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[4]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM1B',
+    group: 'PWM',
+    name: 'ETPWM1B'
+  }
+  properties: {
+    PortPinId: 16,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM1B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOA[7]',
+    group: 'GPIO',
+    name: 'GIOA[7]'
+  }
+  properties: {
+    PortPinId: 11,
+    ArcPortPadId: A5,
+    __shortName: 'GIOA[7]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[6]',
+    group: 'NHET',
+    name: 'N2HET2[6]'
+  }
+  properties: {
+    PortPinId: 22,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[6]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM2A',
+    group: 'PWM',
+    name: 'ETPWM2A'
+  }
+  properties: {
+    PortPinId: 22,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM2A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[01]',
+    group: 'NHET',
+    name: 'N2HET1[01]'
+  }
+  properties: {
+    PortPinId: 23,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[01]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI4NENA',
+    group: 'SPI',
+    name: 'SPI4NENA'
+  }
+  properties: {
+    PortPinId: 23,
+    ArcPortPadId: A5,
+    __shortName: 'SPI4NENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[8]',
+    group: 'NHET',
+    name: 'N2HET2[8]'
+  }
+  properties: {
+    PortPinId: 23,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[8]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP2A',
+    group: 'MAGIC',
+    name: 'EQEP2A'
+  }
+  properties: {
+    PortPinId: 23,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP2A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC5,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[03]',
+    group: 'NHET',
+    name: 'N2HET1[03]'
+  }
+  properties: {
+    PortPinId: 24,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[03]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI4NCS[0]',
+    group: 'SPI',
+    name: 'SPI4NCS[0]'
+  }
+  properties: {
+    PortPinId: 24,
+    ArcPortPadId: A5,
+    __shortName: 'SPI4NCS[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[10]',
+    group: 'NHET',
+    name: 'N2HET2[10]'
+  }
+  properties: {
+    PortPinId: 24,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[10]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP2B',
+    group: 'MAGIC',
+    name: 'EQEP2B'
+  }
+  properties: {
+    PortPinId: 24,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP2B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC5,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[0]',
+    group: 'NHET',
+    name: 'N2HET1[0]'
+  }
+  properties: {
+    PortPinId: 25,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI4CLK',
+    group: 'SPI',
+    name: 'SPI4CLK'
+  }
+  properties: {
+    PortPinId: 25,
+    ArcPortPadId: A5,
+    __shortName: 'SPI4CLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM2B',
+    group: 'PWM',
+    name: 'ETPWM2B'
+  }
+  properties: {
+    PortPinId: 25,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM2B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[02]',
+    group: 'NHET',
+    name: 'N2HET1[02]'
+  }
+  properties: {
+    PortPinId: 30,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[02]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI4SIMO',
+    group: 'SPI',
+    name: 'SPI4SIMO'
+  }
+  properties: {
+    PortPinId: 30,
+    ArcPortPadId: A5,
+    __shortName: 'SPI4SIMO',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM3A',
+    group: 'PWM',
+    name: 'ETPWM3A'
+  }
+  properties: {
+    PortPinId: 30,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM3A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[05]',
+    group: 'NHET',
+    name: 'N2HET1[05]'
+  }
+  properties: {
+    PortPinId: 31,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[05]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI4SOMI',
+    group: 'SPI',
+    name: 'SPI4SOMI'
+  }
+  properties: {
+    PortPinId: 31,
+    ArcPortPadId: A5,
+    __shortName: 'SPI4SOMI',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[12]',
+    group: 'NHET',
+    name: 'N2HET2[12]'
+  }
+  properties: {
+    PortPinId: 31,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[12]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM3B',
+    group: 'PWM',
+    name: 'ETPWM3B'
+  }
+  properties: {
+    PortPinId: 31,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM3B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[07]',
+    group: 'NHET',
+    name: 'N2HET1[07]'
+  }
+  properties: {
+    PortPinId: 33,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[07]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[14]',
+    group: 'NHET',
+    name: 'N2HET2[14]'
+  }
+  properties: {
+    PortPinId: 33,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[14]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM7B',
+    group: 'PWM',
+    name: 'ETPWM7B'
+  }
+  properties: {
+    PortPinId: 33,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM7B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_DATA[11]',
+    group: 'MAGIC',
+    name: 'EMIF_DATA[11]'
+  }
+  properties: {
+    PortPinId: 202,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_DATA[11]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_DATA[11]',
+    group: 'MAGIC',
+    name: 'EMIF_DATA[11]'
+  }
+  properties: {
+    PortPinId: 203,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_DATA[11]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[09]',
+    group: 'NHET',
+    name: 'N2HET1[09]'
+  }
+  properties: {
+    PortPinId: 35,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[09]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[16]',
+    group: 'NHET',
+    name: 'N2HET2[16]'
+  }
+  properties: {
+    PortPinId: 35,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[16]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM7A',
+    group: 'PWM',
+    name: 'ETPWM7A'
+  }
+  properties: {
+    PortPinId: 35,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM7A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[1]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[1]'
+  }
+  properties: {
+    PortPinId: 37,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[25]',
+    group: 'NHET',
+    name: 'N2HET1[25]'
+  }
+  properties: {
+    PortPinId: 37,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[25]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MDCLK',
+    group: 'MAGIC',
+    name: 'MDCLK'
+  }
+  properties: {
+    PortPinId: 37,
+    ArcPortPadId: A5,
+    __shortName: 'MDCLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[06]',
+    group: 'NHET',
+    name: 'N2HET1[06]'
+  }
+  properties: {
+    PortPinId: 38,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[06]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SCIRX',
+    group: 'MAGIC',
+    name: 'SCIRX'
+  }
+  properties: {
+    PortPinId: 38,
+    ArcPortPadId: A5,
+    __shortName: 'SCIRX',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM5A',
+    group: 'PWM',
+    name: 'ETPWM5A'
+  }
+  properties: {
+    PortPinId: 38,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM5A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[13]',
+    group: 'NHET',
+    name: 'N2HET1[13]'
+  }
+  properties: {
+    PortPinId: 39,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[13]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SCITX',
+    group: 'MAGIC',
+    name: 'SCITX'
+  }
+  properties: {
+    PortPinId: 39,
+    ArcPortPadId: A5,
+    __shortName: 'SCITX',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM5B',
+    group: 'PWM',
+    name: 'ETPWM5B'
+  }
+  properties: {
+    PortPinId: 39,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM5B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[2]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[2]'
+  }
+  properties: {
+    PortPinId: 40,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[19]',
+    group: 'NHET',
+    name: 'N2HET1[19]'
+  }
+  properties: {
+    PortPinId: 40,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[19]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MDIO',
+    group: 'MAGIC',
+    name: 'MDIO'
+  }
+  properties: {
+    PortPinId: 40,
+    ArcPortPadId: A5,
+    __shortName: 'MDIO',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[15]',
+    group: 'NHET',
+    name: 'N2HET1[15]'
+  }
+  properties: {
+    PortPinId: 41,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[15]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[4]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[4]'
+  }
+  properties: {
+    PortPinId: 41,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[4]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP1',
+    group: 'MAGIC',
+    name: 'ECAP1'
+  }
+  properties: {
+    PortPinId: 41,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP1',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NENA',
+    group: 'SPI',
+    name: 'MIBSPI3NENA'
+  }
+  properties: {
+    PortPinId: 54,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[5]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[5]'
+  }
+  properties: {
+    PortPinId: 54,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[5]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[31]',
+    group: 'NHET',
+    name: 'N2HET1[31]'
+  }
+  properties: {
+    PortPinId: 54,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[31]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP1B',
+    group: 'MAGIC',
+    name: 'EQEP1B'
+  }
+  properties: {
+    PortPinId: 54,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP1B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3NCS[0]',
+    group: 'SPI',
+    name: 'MIBSPI3NCS[0]'
+  }
+  properties: {
+    PortPinId: 55,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3NCS[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'AD2EVT',
+    group: 'MAGIC',
+    name: 'AD2EVT'
+  }
+  properties: {
+    PortPinId: 55,
+    ArcPortPadId: A5,
+    __shortName: 'AD2EVT',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'GIOB[2]',
+    group: 'GPIO',
+    name: 'GIOB[2]'
+  }
+  properties: {
+    PortPinId: 55,
+    ArcPortPadId: A5,
+    __shortName: 'GIOB[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_DIO,
+    PortPinInitialMode: PORT_PIN_MODE_DIO,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP1I',
+    group: 'MAGIC',
+    name: 'EQEP1I'
+  }
+  properties: {
+    PortPinId: 55,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP1I',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[3]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[3]'
+  }
+  properties: {
+    PortPinId: 204,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[21]',
+    group: 'NHET',
+    name: 'N2HET1[21]'
+  }
+  properties: {
+    PortPinId: 205,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[21]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'AD1EVT',
+    group: 'MAGIC',
+    name: 'AD1EVT'
+  }
+  properties: {
+    PortPinId: 86,
+    ArcPortPadId: A5,
+    __shortName: 'AD1EVT',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RX_ER',
+    group: 'MAGIC',
+    name: 'MII_RX_ER'
+  }
+  properties: {
+    PortPinId: 86,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RX_ER',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_RX_ER',
+    group: 'MAGIC',
+    name: 'RMII_RX_ER'
+  }
+  properties: {
+    PortPinId: 86,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_RX_ER',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_nCS[0]',
+    group: 'MAGIC',
+    name: 'EMIF_nCS[0]'
+  }
+  properties: {
+    PortPinId: 206,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_nCS[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[7]',
+    group: 'NHET',
+    name: 'N2HET2[7]'
+  }
+  properties: {
+    PortPinId: 207,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[7]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_nCS[3]',
+    group: 'MAGIC',
+    name: 'EMIF_nCS[3]'
+  }
+  properties: {
+    PortPinId: 208,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_nCS[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[9]',
+    group: 'NHET',
+    name: 'N2HET2[9]'
+  }
+  properties: {
+    PortPinId: 209,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[9]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[24]',
+    group: 'NHET',
+    name: 'N2HET1[24]'
+  }
+  properties: {
+    PortPinId: 91,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[24]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[5]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[5]'
+  }
+  properties: {
+    PortPinId: 91,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[5]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RXD[0]',
+    group: 'MAGIC',
+    name: 'MII_RXD[0]'
+  }
+  properties: {
+    PortPinId: 91,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RXD[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_RXD[0]',
+    group: 'MAGIC',
+    name: 'RMII_RXD[0]'
+  }
+  properties: {
+    PortPinId: 91,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_RXD[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[26]',
+    group: 'NHET',
+    name: 'N2HET1[26]'
+  }
+  properties: {
+    PortPinId: 92,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[26]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RXD[1]',
+    group: 'MAGIC',
+    name: 'MII_RXD[1]'
+  }
+  properties: {
+    PortPinId: 92,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RXD[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_RXD[1]',
+    group: 'MAGIC',
+    name: 'RMII_RXD[1]'
+  }
+  properties: {
+    PortPinId: 92,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_RXD[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NENA',
+    group: 'SPI',
+    name: 'MIBSPI1NENA'
+  }
+  properties: {
+    PortPinId: 96,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[23]',
+    group: 'NHET',
+    name: 'N2HET1[23]'
+  }
+  properties: {
+    PortPinId: 96,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[23]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RXD[2]',
+    group: 'MAGIC',
+    name: 'MII_RXD[2]'
+  }
+  properties: {
+    PortPinId: 96,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RXD[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP4',
+    group: 'MAGIC',
+    name: 'ECAP4'
+  }
+  properties: {
+    PortPinId: 96,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP4',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5NENA',
+    group: 'SPI',
+    name: 'MIBSPI5NENA'
+  }
+  properties: {
+    PortPinId: 97,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5NENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RXD[3]',
+    group: 'MAGIC',
+    name: 'MII_RXD[3]'
+  }
+  properties: {
+    PortPinId: 97,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RXD[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SOMI[1]',
+    group: 'SPI',
+    name: 'MIBSPI5SOMI[1]'
+  }
+  properties: {
+    PortPinId: 97,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SOMI[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP5',
+    group: 'MAGIC',
+    name: 'ECAP5'
+  }
+  properties: {
+    PortPinId: 97,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP5',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC5,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SOMI[0]',
+    group: 'SPI',
+    name: 'MIBSPI5SOMI[0]'
+  }
+  properties: {
+    PortPinId: 98,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SOMI[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TXD[0]',
+    group: 'MAGIC',
+    name: 'MII_TXD[0]'
+  }
+  properties: {
+    PortPinId: 98,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TXD[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_TXD[0]',
+    group: 'MAGIC',
+    name: 'RMII_TXD[0]'
+  }
+  properties: {
+    PortPinId: 98,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_TXD[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SIMO[0]',
+    group: 'SPI',
+    name: 'MIBSPI5SIMO[0]'
+  }
+  properties: {
+    PortPinId: 99,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SIMO[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TXD[1]',
+    group: 'MAGIC',
+    name: 'MII_TXD[1]'
+  }
+  properties: {
+    PortPinId: 99,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TXD[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_TXD[1]',
+    group: 'MAGIC',
+    name: 'RMII_TXD[1]'
+  }
+  properties: {
+    PortPinId: 99,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_TXD[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SOMI[2]',
+    group: 'SPI',
+    name: 'MIBSPI5SOMI[2]'
+  }
+  properties: {
+    PortPinId: 99,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SOMI[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5CLK',
+    group: 'SPI',
+    name: 'MIBSPI5CLK'
+  }
+  properties: {
+    PortPinId: 100,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5CLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TXEN',
+    group: 'MAGIC',
+    name: 'MII_TXEN'
+  }
+  properties: {
+    PortPinId: 100,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TXEN',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_TXEN',
+    group: 'MAGIC',
+    name: 'RMII_TXEN'
+  }
+  properties: {
+    PortPinId: 100,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_TXEN',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[0]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[0]'
+  }
+  properties: {
+    PortPinId: 105,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1SOMI[1]',
+    group: 'SPI',
+    name: 'MIBSPI1SOMI[1]'
+  }
+  properties: {
+    PortPinId: 105,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1SOMI[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TXD[2]',
+    group: 'MAGIC',
+    name: 'MII_TXD[2]'
+  }
+  properties: {
+    PortPinId: 105,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TXD[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP6',
+    group: 'MAGIC',
+    name: 'ECAP6'
+  }
+  properties: {
+    PortPinId: 105,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP6',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[08]',
+    group: 'NHET',
+    name: 'N2HET1[08]'
+  }
+  properties: {
+    PortPinId: 106,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[08]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1SIMO[1]',
+    group: 'SPI',
+    name: 'MIBSPI1SIMO[1]'
+  }
+  properties: {
+    PortPinId: 106,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1SIMO[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TXD[3]',
+    group: 'MAGIC',
+    name: 'MII_TXD[3]'
+  }
+  properties: {
+    PortPinId: 106,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TXD[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[28]',
+    group: 'NHET',
+    name: 'N2HET1[28]'
+  }
+  properties: {
+    PortPinId: 107,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[28]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RXCLK',
+    group: 'MAGIC',
+    name: 'MII_RXCLK'
+  }
+  properties: {
+    PortPinId: 210,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RXCLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_REFCLK',
+    group: 'MAGIC',
+    name: 'RMII_REFCLK'
+  }
+  properties: {
+    PortPinId: 107,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_REFCLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RX_AVCLK4',
+    group: 'MAGIC',
+    name: 'MII_RX_AVCLK4'
+  }
+  properties: {
+    PortPinId: 107,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RX_AVCLK4',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_nWE',
+    group: 'MAGIC',
+    name: 'EMIF_nWE'
+  }
+  properties: {
+    PortPinId: 211,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_nWE',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_RNW',
+    group: 'MAGIC',
+    name: 'EMIF_RNW'
+  }
+  properties: {
+    PortPinId: 212,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_RNW',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_BA[1]',
+    group: 'MAGIC',
+    name: 'EMIF_BA[1]'
+  }
+  properties: {
+    PortPinId: 213,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_BA[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[5]',
+    group: 'NHET',
+    name: 'N2HET2[5]'
+  }
+  properties: {
+    PortPinId: 214,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[5]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[10]',
+    group: 'NHET',
+    name: 'N2HET1[10]'
+  }
+  properties: {
+    PortPinId: 118,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[10]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TX_CLK',
+    group: 'MAGIC',
+    name: 'MII_TX_CLK'
+  }
+  properties: {
+    PortPinId: 118,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TX_CLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_TX_AVCLK4',
+    group: 'MAGIC',
+    name: 'MII_TX_AVCLK4'
+  }
+  properties: {
+    PortPinId: 118,
+    ArcPortPadId: A5,
+    __shortName: 'MII_TX_AVCLK4',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'nTZ3',
+    group: 'MAGIC',
+    name: 'nTZ3'
+  }
+  properties: {
+    PortPinId: 118,
+    ArcPortPadId: A5,
+    __shortName: 'nTZ3',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[12]',
+    group: 'NHET',
+    name: 'N2HET1[12]'
+  }
+  properties: {
+    PortPinId: 124,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[12]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_CRS',
+    group: 'MAGIC',
+    name: 'MII_CRS'
+  }
+  properties: {
+    PortPinId: 124,
+    ArcPortPadId: A5,
+    __shortName: 'MII_CRS',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'RMII_CRS_DV',
+    group: 'MAGIC',
+    name: 'RMII_CRS_DV'
+  }
+  properties: {
+    PortPinId: 124,
+    ArcPortPadId: A5,
+    __shortName: 'RMII_CRS_DV',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[30]',
+    group: 'NHET',
+    name: 'N2HET1[30]'
+  }
+  properties: {
+    PortPinId: 127,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[30]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_RX_DV',
+    group: 'MAGIC',
+    name: 'MII_RX_DV'
+  }
+  properties: {
+    PortPinId: 127,
+    ArcPortPadId: A5,
+    __shortName: 'MII_RX_DV',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP2S',
+    group: 'MAGIC',
+    name: 'EQEP2S'
+  }
+  properties: {
+    PortPinId: 127,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP2S',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC3,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI1NCS[1]',
+    group: 'SPI',
+    name: 'MIBSPI1NCS[1]'
+  }
+  properties: {
+    PortPinId: 130,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI1NCS[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[17]',
+    group: 'NHET',
+    name: 'N2HET1[17]'
+  }
+  properties: {
+    PortPinId: 130,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[17]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MII_COL',
+    group: 'MAGIC',
+    name: 'MII_COL'
+  }
+  properties: {
+    PortPinId: 130,
+    ArcPortPadId: A5,
+    __shortName: 'MII_COL',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP1S',
+    group: 'MAGIC',
+    name: 'EQEP1S'
+  }
+  properties: {
+    PortPinId: 130,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP1S',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[1]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[1]'
+  }
+  properties: {
+    PortPinId: 215,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[3]',
+    group: 'NHET',
+    name: 'N2HET2[3]'
+  }
+  properties: {
+    PortPinId: 216,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[0]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[0]'
+  }
+  properties: {
+    PortPinId: 217,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[1]',
+    group: 'NHET',
+    name: 'N2HET2[1]'
+  }
+  properties: {
+    PortPinId: 218,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[7]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[7]'
+  }
+  properties: {
+    PortPinId: 219,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[7]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[13]',
+    group: 'NHET',
+    name: 'N2HET2[13]'
+  }
+  properties: {
+    PortPinId: 220,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[13]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[6]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[6]'
+  }
+  properties: {
+    PortPinId: 221,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[6]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[11]',
+    group: 'NHET',
+    name: 'N2HET2[11]'
+  }
+  properties: {
+    PortPinId: 222,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[11]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[8]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[8]'
+  }
+  properties: {
+    PortPinId: 223,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[8]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[15]',
+    group: 'NHET',
+    name: 'N2HET2[15]'
+  }
+  properties: {
+    PortPinId: 224,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[15]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EMIF_ADDR[8]',
+    group: 'MAGIC',
+    name: 'EMIF_ADDR[8]'
+  }
+  properties: {
+    PortPinId: 225,
+    ArcPortPadId: A5,
+    __shortName: 'EMIF_ADDR[8]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET2[15]',
+    group: 'NHET',
+    name: 'N2HET2[15]'
+  }
+  properties: {
+    PortPinId: 226,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET2[15]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5NCS[0]',
+    group: 'SPI',
+    name: 'MIBSPI5NCS[0]'
+  }
+  properties: {
+    PortPinId: 32,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5NCS[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM4A',
+    group: 'PWM',
+    name: 'ETPWM4A'
+  }
+  properties: {
+    PortPinId: 32,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM4A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI2NENA',
+    group: 'SPI',
+    name: 'SPI2NENA'
+  }
+  properties: {
+    PortPinId: 227,
+    ArcPortPadId: A5,
+    __shortName: 'SPI2NENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'SPI2NCS[1]',
+    group: 'SPI',
+    name: 'SPI2NCS[1]'
+  }
+  properties: {
+    PortPinId: 228,
+    ArcPortPadId: A5,
+    __shortName: 'SPI2NCS[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[04]',
+    group: 'NHET',
+    name: 'N2HET1[04]'
+  }
+  properties: {
+    PortPinId: 36,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[04]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM4B',
+    group: 'PWM',
+    name: 'ETPWM4B'
+  }
+  properties: {
+    PortPinId: 36,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM4B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3SOMI[0]',
+    group: 'SPI',
+    name: 'MIBSPI3SOMI[0]'
+  }
+  properties: {
+    PortPinId: 51,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3SOMI[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'AWM_EXT_ENA',
+    group: 'MAGIC',
+    name: 'AWM_EXT_ENA'
+  }
+  properties: {
+    PortPinId: 229,
+    ArcPortPadId: A5,
+    __shortName: 'AWM_EXT_ENA',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP2',
+    group: 'MAGIC',
+    name: 'ECAP2'
+  }
+  properties: {
+    PortPinId: 51,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP2',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3SIMO[0]',
+    group: 'SPI',
+    name: 'MIBSPI3SIMO[0]'
+  }
+  properties: {
+    PortPinId: 52,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3SIMO[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'AWM_EXT_SEL[0]',
+    group: 'MAGIC',
+    name: 'AWM_EXT_SEL[0]'
+  }
+  properties: {
+    PortPinId: 230,
+    ArcPortPadId: A5,
+    __shortName: 'AWM_EXT_SEL[0]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ECAP3',
+    group: 'MAGIC',
+    name: 'ECAP3'
+  }
+  properties: {
+    PortPinId: 52,
+    ArcPortPadId: A5,
+    __shortName: 'ECAP3',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI3CLK',
+    group: 'SPI',
+    name: 'MIBSPI3CLK'
+  }
+  properties: {
+    PortPinId: 53,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI3CLK',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'AWM_EXT_SEL[1]',
+    group: 'MAGIC',
+    name: 'AWM_EXT_SEL[1]'
+  }
+  properties: {
+    PortPinId: 231,
+    ArcPortPadId: A5,
+    __shortName: 'AWM_EXT_SEL[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'EQEP1A',
+    group: 'MAGIC',
+    name: 'EQEP1A'
+  }
+  properties: {
+    PortPinId: 53,
+    ArcPortPadId: A5,
+    __shortName: 'EQEP1A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_NONE,
+    PortPinInitialMode: PORT_PIN_MODE_NONE,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[16]',
+    group: 'NHET',
+    name: 'N2HET1[16]'
+  }
+  properties: {
+    PortPinId: 139,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[16]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM1SYNCI',
+    group: 'PWM',
+    name: 'ETPWM1SYNCI'
+  }
+  properties: {
+    PortPinId: 139,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM1SYNCI',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM1SYNCO',
+    group: 'PWM',
+    name: 'ETPWM1SYNCO'
+  }
+  properties: {
+    PortPinId: 6,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM1SYNCO',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC2,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[18]',
+    group: 'NHET',
+    name: 'N2HET1[18]'
+  }
+  properties: {
+    PortPinId: 140,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[18]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM6A',
+    group: 'PWM',
+    name: 'ETPWM6A'
+  }
+  properties: {
+    PortPinId: 140,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM6A',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'N2HET1[20]',
+    group: 'NHET',
+    name: 'N2HET1[20]'
+  }
+  properties: {
+    PortPinId: 141,
+    ArcPortPadId: A5,
+    __shortName: 'N2HET1[20]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_NHET,
+    PortPinInitialMode: PORT_PIN_MODE_NHET,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'ETPWM6B',
+    group: 'PWM',
+    name: 'ETPWM6B'
+  }
+  properties: {
+    PortPinId: 141,
+    ArcPortPadId: A5,
+    __shortName: 'ETPWM6B',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC1,
+    PortPinMode: PORT_PIN_MODE_PWM,
+    PortPinInitialMode: PORT_PIN_MODE_PWM,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5NCS[1]',
+    group: 'SPI',
+    name: 'MIBSPI5NCS[1]'
+  }
+  properties: {
+    PortPinId: 232,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5NCS[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5NCS[2]',
+    group: 'SPI',
+    name: 'MIBSPI5NCS[2]'
+  }
+  properties: {
+    PortPinId: 233,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5NCS[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5NCS[3]',
+    group: 'SPI',
+    name: 'MIBSPI5NCS[3]'
+  }
+  properties: {
+    PortPinId: 234,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5NCS[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SOMI[3]',
+    group: 'SPI',
+    name: 'MIBSPI5SOMI[3]'
+  }
+  properties: {
+    PortPinId: 235,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SOMI[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC4,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SIMO[1]',
+    group: 'SPI',
+    name: 'MIBSPI5SIMO[1]'
+  }
+  properties: {
+    PortPinId: 236,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SIMO[1]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SIMO[2]',
+    group: 'SPI',
+    name: 'MIBSPI5SIMO[2]'
+  }
+  properties: {
+    PortPinId: 237,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SIMO[2]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }
+  
+- !!com.arccore.common.yaml.data.GroupedElement
+  meta: {
+    description: 'MIBSPI5SIMO[3]',
+    group: 'SPI',
+    name: 'MIBSPI5SIMO[3]'
+  }
+  properties: {
+    PortPinId: 238,
+    ArcPortPadId: A5,
+    __shortName: 'MIBSPI5SIMO[3]',
+    PortPinConfigurationMacro: PORT_PIN_CONFIG_FUNC0,
+    PortPinMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinInitialMode: PORT_PIN_MODE_DIO_SPI,
+    PortPinDirectionChangeable: 0,
+    PortPinModeChangeable: 0,
+    PortPinLevelValue: PORT_PIN_LEVEL_LOW
+  }

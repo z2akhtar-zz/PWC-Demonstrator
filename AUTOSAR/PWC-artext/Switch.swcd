@@ -1,0 +1,24 @@
+package PWC.SensorsActuators.Switch
+
+import PWC.Types.*
+import PWC.SensorsActuators.Switch.*
+
+component application SwitchType {
+	ports {
+		sender req provides BasicRequest
+	}	
+}
+
+internalBehavior SwitchBehavior for SwitchType {
+	runnable SwitchRunnable [0.0] {
+		symbol "SwitchRunnable"
+		dataWriteAccess req.request
+		timingEvent 0.1 as SwitchEvent
+	}
+}
+
+implementation SwitchImpl for SwitchType.SwitchBehavior {
+	language c
+	codeDescriptor "src"
+}
+
